@@ -1,0 +1,1046 @@
+
+html {
+  background: url(http://res.cloudinary.com/theclosingcut/image/upload/v1493327500/bg-orange-sky_lxsnbk.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+}
+
+/* ADDS BLUR AFTER LANDING SEQUENCE */
+
+.addBlur {
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+}
+
+/* CONTAINER BACKGROUND IS MADE TRANSPARENT HERE */
+
+body {
+  background-color: transparent !important;
+  margin: 0;
+  padding: 0;
+}
+
+/*REMOVES SPACE ON SIDE OF SCREEN*/
+
+.row {
+    margin: 0;
+}
+
+                      /*                    */
+                      /*                    */
+                      /*  LANDING SEQUENCE  */
+                      /*                    */
+                      /*                    */
+
+
+.trans-top {
+    background-color: transparent;
+    height: 245px;
+    padding-top: 50px;
+}
+
+.trans-bot {
+    background-color: transparent;
+    height: 410px;
+}
+
+.top-trigger {
+    height: 75px;
+    padding-top: 50px;
+    /*margin-top: 50px;*/
+    transition-property: height;
+    transtion-duration: 3s;
+    transition-timing-function: ease-out;
+}
+
+.bot-trigger {
+    height: 35px;
+    transition-property: height;
+    transtion-duration: 3s;
+    transition-timing-function: ease-out;
+}
+
+                      /*                    */
+                      /*                    */
+                      /* NAVBAR STARTS HERE */
+                      /*                    */
+                      /*                    */
+
+/* NAVBAR FADE IN ATTEMPT# 4999 */
+/* TODO: fix navbar so that it doesn't slide up when you scroll on small devices ( fine on larger screens ). */
+
+.navbar {
+  display: none;
+  box-shadow: 0 55px 6px -6px #000;
+}
+
+div.navbar-logo {
+    width: 240px;
+    vertical-align: middle;
+    padding: 0;
+    margin: 10px 0;
+}
+
+/* REMOVING PADDING ON RIGHT SIDE OF COLLAPSED NAVBAR BUTTONS */
+
+button.navbar-toggle {
+    margin-right: 0;
+}
+
+/* DIV FOR NAVBAR'S BRAND AND BUTTONS (INLINE-BLOCK ALIGNMENT) */
+
+.navbar--block {
+  display: inline-block;
+}
+
+/* NAVBAR-BRAND FONT SIZE CHANGE */
+
+.navbar-brand {
+  font-size: 24px;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 2px;
+  color: rgb(0, 33, 66) !important;
+}
+
+/* ADDS MARGIN TO CENTER NAV LINKS */
+
+a.nav--links {
+  padding: 10px 0;
+}
+
+/*button.navbar-toggle.collapsed {
+  margin-top: 15px;
+}*/
+
+/* STYLING FOR NAVBAR BUTTONS' HOVER STATE */
+
+#ourvisionlink:hover, #ourserviceslink:hover, #testimonialslink:hover, #contactslink:hover, #contactslink:active {
+  background-color: #EAEAF9;
+}
+
+/* DROPDOWN MENU WIDTH */
+
+.dropdown-menu {
+  width: 300px;
+}
+
+/* ENABLES DROPDOWN ON HOVER */
+
+@media (min-width: 767px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+/* REMOVE LINK STYLING FROM BRAND (EXCEPT FOR ACTIVE STATE) */
+
+a:hover, a:visited, a:link, a:active {
+  text-decoration: none;
+}
+
+
+/* STYLING FOR NAVBAR LINK FONT */
+
+.navbar-nav {
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  /*margin-top: 6px;*/
+}
+
+/* MOVES DROPDOWN ITEMS TO THE RIGHT */
+
+.menu--contacts {
+  margin-left: 20px;
+  padding: 10px 0;
+}
+
+
+/* CHANGING TOOLTIP COLOR */
+
+.tooltip--light-blue + .tooltip > .tooltip-inner {
+  background-color: #d3f4ff;
+}
+
+
+
+                        /*                    */
+                        /*                    */
+                        /*    BANNER STYLING  */
+                        /*                    */
+                        /*                    */
+
+
+
+
+
+                        /*                    */
+                        /*                    */
+                        /*    OUR VISION      */
+                        /*       WELL         */
+                        /*                    */
+                        /*                    */
+
+.container--ourvision {
+  background-color: rgba(232, 244, 255, 0.68);
+}
+
+.well--ourvision {
+  background: inherit !important;
+  color: #3F352D;
+  border: none;
+  border-radius: 1.5px;
+  margin: auto;
+  padding: 0 15px;
+  box-shadow: none !important;
+}
+
+/* STYLING FOR OUR VISION HEADER */
+
+h1.ov--header {
+  font-family: 'Oswald', sans-serif;
+  font-size: 42px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 5px;
+  margin: 65px 0 0 0;
+}
+
+/* STYLING FOR OUR VISION CONTENT */
+
+p.ov--content-vision {
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 0.3s ease-in-out;
+}
+
+p.ov--content-vision.is-showing {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+p.ov--content-services {
+  opacity: 0;
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 17px;
+  text-align: center;
+  /*padding-bottom: 25px;*/
+  /*margin-bottom: 60px;*/
+  transform: translateX(-20px);
+  transition: all 0.5s ease-in-out;
+}
+
+p.ov--content-services.is-showing {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+/* OUR VISION HR TAG STYLING */
+
+hr.ov--headline {
+    width: 275px;
+    border: none;
+    border-top: 1.25px solid rgba(255, 147, 40, 0.6);
+    margin: 35px auto;
+}
+
+img.blue-border {
+    border: 3px solid rgb(31, 66, 86);
+}
+
+.ov--img-row {
+    margin-bottom: 85px;
+}
+
+
+
+
+                          /*                    */
+                          /*                    */
+                          /*    TESTIMONIALS    */
+                          /*        WELL        */
+                          /*                    */
+                          /*                    */
+
+.container--testimonials {
+    background: url('https://res.cloudinary.com/theclosingcut/image/upload/v1495922303/sunset_blue_red_hofrxa.jpg') no-repeat fixed bottom;
+    background-position: center;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.well--testimonials {
+    display: flex;
+    flex-direction: column;
+
+    background: transparent !important;
+    border-radius: 1.5px;
+    margin: 0;
+    color: #FEF0CE;
+    font-family: 'Antic Slab', sans-serif;
+    border: none;
+    box-shadow: none !important;
+    /* text-shadow: 0 0 0.5px rgb(242, 238, 255); */
+}
+
+.well--testimonials > h1 {
+    flex-grow: 0;
+    order: 1;
+
+    font-family: 'Oswald', serif;
+    font-size: 45px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 6px;
+    margin-top: 60px;
+}
+
+.well--testimonials > h4 {
+    flex: 0;
+    order: 3;
+
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+.well--testimonials > h4#relative {
+    flex: 0;
+    order: 7;
+
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.well--testimonials > h5 {
+    flex: 0;
+    order: 6;
+
+    font-weight: 700;
+    font-style: italic;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.well--testimonials > p {
+    flex: 0 60%;
+    order: 4;
+
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+}
+
+/* CUSTOM HR FOR TESTIMONIALS WELL */
+
+hr.hr--testimonials {
+    flex: 0;
+    order: 2;
+
+    width: 100%;
+    border: solid 2px #FEF0CE;
+    /* thins line out enough, otherwise it looks like doubled */
+    border-top: 0;
+    margin: 25px auto;
+}
+
+hr.hr--testimonials#bottom-hr {
+    order: 9;
+    margin: 25px auto 75px auto;
+}
+
+/* STYLING FOR DIVIDER ABOVE 'TESTIMONIALS' */
+
+img.logo2 {
+    margin-top: 25px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1.5s ease-in-out;
+}
+
+img.logo2.is-showing {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+
+                          /*                    */
+                          /*                    */
+                          /*    OUR SERVICES    */
+                          /*        WELL        */
+                          /*                    */
+
+/* STYLING FOR OUR SERVICES CONTAINER */
+
+.container--ourservices {
+  background-color: rgb(232, 244, 255);
+  padding: 0;
+  border: none;
+}
+
+ /* STYLING FOR OUR SERVICES WELL */
+.well--ourservices {
+    background: transparent !important;
+    color: #3F352D;
+    font-family: 'Yantramanav', sans-serif;
+    /*padding: 75px 0 105px 0;*/
+    padding-top: 0;
+    padding-bottom: 0;
+    border: none;
+    border-radius: 1.5px;
+    margin-bottom: 0;
+    box-shadow: none !important;
+}
+
+.well--ourservices > h1 {
+    font-family: 'Oswald', serif;
+    font-size: 45px;
+    font-weight: 400 !important;
+    letter-spacing: 6px;
+    text-align: center;
+    margin: 45px 0 30px 0;
+}
+
+div#ourservices--carousel {
+    border: 3px solid rgb(31, 66, 86);
+    margin: 25px 0;
+}
+
+.os--flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.os--description {
+    flex: 1 100%;
+    order: 1;
+
+    width: 220px;
+    margin: 0 auto 10px auto;
+    opacity: 0.85;
+}
+
+.os--description > h2 {
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 38px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.os--description > h3 {
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.os--description > p {
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.os--haircuts {
+    flex: 1 50%;
+    order: 2;
+
+    font-family: 'Yantramanav', sans-serif;
+    text-align: center;
+    width: 220px;  /* min-width = ~180px */
+    padding: 0 20px;
+    margin: 0 auto 20px auto;
+    opacity: 0.85;
+}
+
+.os--haircuts > h4 {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    /*border-bottom: 1px solid #3F352D;*/
+    padding-bottom: 7px;
+    border-bottom: 1px solid rgba(255, 147, 40, 1);
+    margin-bottom: 7px;
+}
+
+.os--haircuts > p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.os--shaves {
+    flex: 1 50%;
+    order: 2;
+
+    font-family: 'Yantramanav', sans-serif;
+    text-align: center;
+    width: 220px;  /* min-width = ~180px */
+    padding: 0 20px;
+    margin: 0 auto 20px auto;
+    opacity: 0.85;
+}
+
+.os--shaves > h4 {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid rgba(255, 147, 40, 1);
+    margin-bottom: 7px;
+}
+
+.os--shaves > p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.os--notification {
+    flex-grow: 0;
+    order: 3;
+
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+div.os--notification > p {
+    width: 240px;
+}
+
+hr.os--headline {
+    width: 100%;
+    border: none;
+    border-top: 1.25px solid rgba(255, 147, 40, 0.6);
+    margin: 0 20px 30px 20px;
+}
+
+hr.os--over-carousel {
+    width: 275px;
+    border: none;
+    border-top: 1.25px solid rgba(255, 147, 40, 0.6);
+    margin: 10px auto 15px auto;
+}
+hr.os--under-carousel {
+    width: 275px;
+    border: none;
+    border-top: 1.25px solid rgba(255, 147, 40, 0.6);
+    margin: 0 auto 45px auto;
+}
+
+
+                          /*                    */
+                          /*                    */
+                          /*    CONTACTS WELL   */
+                          /*                    */
+                          /*                    */
+
+.well--contacts {
+    background: rgba(234, 247, 255, 0.6) !important;
+    color: #03264c;
+    letter-spacing: 1px;
+    border-radius: 1.5px;
+    margin: 60px 0;
+}
+
+.well--contacts > h1 {
+    font-family: 'Oswald', serif;
+    font-size: 42px;
+    font-weight: 400;
+    letter-spacing: 6px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* WRAPPER FOR CONTACTS' TEXT */
+
+.contacts--text-wrapper {
+  text-align: center;
+  margin: 15px 0;
+}
+
+/* CONTACTS TEXT */
+
+.contacts-text {
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 17px;
+  text-align: center;
+  /* text-align: left; */
+  letter-spacing: 2px;
+}
+
+form#form--font {
+  font-family: 'Yantramanav', sans-serif;
+}
+
+/* CONTACTS SUBMIT BUTTON STYLING */
+
+.submit--button-wrapper {
+    text-align: center;
+    margin: 30px;
+}
+
+.submit--button {
+  background-color: #125D96;
+  color: white;
+  font-family: 'Yantramanav', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 2px;
+  padding: 15px 65px;
+  border-radius: 1.5px;
+  text-shadow: 0 0 1px #000;
+  box-shadow: 0 4px 1px 1px #063568;
+}
+
+.submit--button:hover {
+  color: white;
+}
+
+.submit--button:active {
+  color: white;
+  box-shadow: 0 2px 1px 1px #063568;
+  transform: translateY(3px);
+}
+
+/* CONTACTS HR TAG STYLING */
+
+.hr--contacts {
+  width: 200px;
+  border: solid 1px rgba(255, 147, 40, 0.5);
+  /* thins line out enough, otherwise it looks like doubled */
+  border-top: 0;
+  margin: 30px auto;
+}
+
+
+                            /*                    */
+                            /*                    */
+                            /*       MEDIA        */
+                            /*      QUERIES       */
+                            /*                    */
+                            /*                    */
+
+@media screen and (max-width: 500px) {
+  .ov--header {
+      font-size: 30px;
+  }
+
+  hr.ov--headline {
+      width: 150px;
+  }
+
+  img#ov--img {
+      padding: 0;
+      margin-bottom: 0;
+  }
+
+  p.ov--content-vision {
+      font-size: 19px;
+  }
+
+  p.ov--content-services {
+      font-size: 17px;
+  }
+
+  h4.services--headers {
+      font-size: 20px;
+  }
+
+  p.services--text {
+      font-size: 16px;
+  }
+
+  /* ADJUSTS 'LOGO2' SIZE */
+  .divider--darkgrey-big {
+
+  }
+
+  .well--testimonials > h1 {
+    font-size: 30px;
+  }
+
+  .well--testimonials > h4 {
+    font-size: 19px;
+  }
+
+  .well--testimonials > h5 {
+    font-size: 17px;
+  }
+
+  .well--ourservices > h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .os--description > h2 {
+      font-size: 24px;
+  }
+
+  .os--description > h3 {
+      font-size: 20px;
+  }
+
+  .os--haircuts > h4 {
+      font-size: 20px;
+  }
+
+  .os--haircuts > p {
+      font-size: 17px;
+  }
+
+  .os--shaves > h4 {
+      font-size: 20px;
+  }
+
+  .os--shaves > p {
+      font-size: 17px;
+  }
+
+  .os--notification {
+      font-size: 13px;
+  }
+
+  /* REMOVES COL PADDING FOR CONTAINERS WITH IMAGES/TEXT */
+
+  div.col-lg-4.col-lg-offset-4.col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2.col-xs-12 {
+      padding-left: 0;
+      padding-right: 0;
+  }
+
+  div.col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1.col-sm-12.col-xs-12 {
+      padding-left: 0;
+      padding-right: 0;
+  }
+
+  /* RESIZING 'OUR SERVICES' IMAGE */
+
+  div.col-lg-6.col-lg-offset-3.col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2.col-xs-12 {
+      padding-left: 0;
+      padding-right: 0;
+  }
+
+  /* REMOVES COL PADDING IN 'COUNSELLING' */
+
+  div.col-lg-6.col-lg-offset-3.col-md-8.col-md-offset-2.col-sm-8.col-sm-offset-2.col-xs-12 {
+      padding-left: 0;
+      padding-right: 0;
+  }
+
+  div.well--contacts > h1 {
+      font-size: 30px;
+  }
+
+  div.counsel--services {
+      padding: 0;
+  }
+}
+
+
+                            /*                    */
+                            /*                    */
+                            /*     COUNSELLING    */
+                            /*       TRIGGER      */
+                            /*      CONTAINER     */
+                            /*                    */
+                            /*                    */
+
+div.container--trigger {
+    background-color: #CEFFDD;
+    height: 90px;
+    font-family: 'Yantramanav', sans-serif;
+    border-top: 2px solid #545454;
+}
+
+div.trigger--flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 14px;
+}
+
+div.trigger--flex > h4 {
+    flex: 100%;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    margin: 9px 0;
+    opacity: 0.75;
+}
+
+div.trigger--flex > i {
+    flex: 100%;
+    text-align: center;
+    opacity: 0.75;
+}
+
+
+                            /*                    */
+                            /*                    */
+                            /*     COUNSELLING    */
+                            /*      CONTAINER     */
+                            /*                    */
+                            /*                    */
+
+div.container--counsel {
+    background-color: #E7E7E7;
+    -webkit-box-shadow: inset 1px 7px 22px -2px rgba(0,0,0,0.35);
+    -moz-box-shadow: inset 1px 7px 22px -2px rgba(0,0,0,0.35);
+    box-shadow: inset 1px 7px 22px -2px rgba(0,0,0,0.35);
+}
+
+/* CODE FOR CONTAINER COLLAPSE/EXPAND */
+
+div.container--counsel-close {
+    height: 0;
+
+    -webkit-transition-property: height;
+    transition-property: height;
+    -webkit-transition-duration: 3s;
+    transition-duration: 3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+div.counsel--flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+div.counsel--img {
+    /* Flex code */
+    flex-grow: 0 50%;
+    width: 350px;
+    text-align: center;
+}
+
+.green-border {
+    border: 0.5px solid #7AFFA4;
+}
+
+div.counsel--services {
+    /* Flex code */
+    flex-grow: 0 50%;
+    width: 350px;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 17px;
+    padding: 20px 30px;
+}
+
+div.counsel--services > h4 {
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-bottom: 7px;
+    border-bottom: 1.25px solid #7AFFA4;
+    margin-bottom: 20px;
+}
+
+div.counsel--services > p {
+    margin: 10px 0;
+}
+
+div.counsel--services > p.contact {
+    padding-top: 10px;
+    border-top: 1px solid #7AFFA4;
+    margin-top: 20px;
+}
+
+div.counsel--services > p > i {
+    margin-right: 3px;
+}
+
+
+/*CROSSHAIR BACKGROUND COLOR TOOL - CHANGES BG TO PINK WHILE WORKING ON AREA*/
+
+.crosshair {
+  background-color: pink;
+}
+
+/* BUTTON STYLING TO REMOVE HIGHLIGHT ON CLICK */
+
+button {
+  outline: none !important;
+}
+
+/* UNDERLINE CODE, SIMPLY ADDS BOTTOM BORDER */
+
+.underline {
+    padding-bottom: 10px;
+    border-bottom: 0.5px solid inherit;
+}
+
+
+
+                          /*                    */
+                          /*                    */
+                          /*    FOOTER STYLING  */
+                          /*                    */
+                          /*                    */
+
+
+.footer {
+    background-color: #545454;
+    /*Set the fixed height of the footer here.*/
+    height: 60px;
+    width: 100%;
+    bottom: 0;
+    position: center;
+}
+
+.footer--text {
+  color: white;
+  margin-top: 17px;
+}
+
+
+                          /*                    */
+                          /*  DIVIDER CONTAINER */
+                          /*      BANNER TO     */
+                          /*    'OUR VISION'    */
+                          /*                    */
+
+.divider--darkblue {
+  background: rgb(2, 25, 51);
+  height: 240px;
+}
+
+.divider--darkblue-thin {
+  background: rgb(2, 25, 51);
+  height: 3px;
+}
+
+.divider--aquablue {
+  background: rgba(10, 41, 66, 0.8);
+  height: 6px;
+}
+
+.divider--darkgrey-big {
+  background: rgba(17, 23, 29, 0.9);
+  height: 250px;
+  margin: 0;
+}
+
+.divider--lightblue {
+  background: rgba(232, 244, 255, 0.9);
+  height: 6px;
+}
+
+.divider--orange {
+  background: rgba(255, 147, 76, 0.9);
+  height: 50px;
+}
+
+.divider--darkgrey {
+  background: rgb(31, 42, 53);
+  height: 35px;
+}
+
+
+                            /*                    */
+                            /*  DIVIDER CONTAINER */
+                            /*      BANNER TO     */
+                            /*    'OUR VISION'    */
+                            /*                    */
+
+.bounce {
+    display: inline-block;
+    position: relative;
+    -moz-animation: bounce 0.85s infinite linear;
+    -o-animation: bounce 0.85s infinite linear;
+    -webkit-animation: bounce 0.85s infinite linear;
+    animation: bounce 0.85s infinite linear;
+
+}
+
+@-webkit-keyframes bounce {
+    0% { top: 0px; }
+    20% { top: -2px; }
+    30% { top: -3px; }
+    40% { top: -2px; }
+    50% { top: 0px; }
+    60% { top: 2px; }
+    70% { top: 3px; }
+    80% { top: 2px; }
+    100% { top: 0px; }
+}
+
+@-moz-keyframes bounce {
+    0% { top: 0px; }
+    20% { top: -2px; }
+    30% { top: -3px; }
+    40% { top: -2px; }
+    50% { top: 0px; }
+    60% { top: 2px; }
+    70% { top: 3px; }
+    80% { top: 2px; }
+    100% { top: 0px; }
+}
+
+@-o-keyframes bounce {
+    0% { top: 0px; }
+    20% { top: -2px; }
+    30% { top: -3px; }
+    40% { top: -2px; }
+    50% { top: 0px; }
+    60% { top: 2px; }
+    70% { top: 3px; }
+    80% { top: 2px; }
+    100% { top: 0px; }
+}
+
+@-ms-keyframes bounce {
+    0% { top: 0px; }
+    20% { top: -2px; }
+    30% { top: -3px; }
+    40% { top: -2px; }
+    50% { top: 0px; }
+    60% { top: 2px; }
+    70% { top: 3px; }
+    80% { top: 2px; }
+    100% { top: 0px; }
+}
+
+@keyframes bounce {
+    0% { top: 0px; }
+    20% { top: -2px; }
+    30% { top: -3px; }
+    40% { top: -2px; }
+    50% { top: 0px; }
+    60% { top: 2px; }
+    70% { top: 3px; }
+    80% { top: 2px; }
+    100% { top: 0px; }
+}
