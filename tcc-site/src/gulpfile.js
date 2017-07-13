@@ -20,7 +20,7 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest('./prod/'))
         .pipe(rename({suffix: '.min'}))
         .pipe(uglify())
-        .pipe(gulp.dest('./prod/code/'))
+        .pipe(gulp.dest('./prod/code'))
         .pipe(notify({ message: 'Scripts tasks for .js are complete.' }));
 });
 
@@ -31,7 +31,7 @@ gulp.task('images', function() {
         .pipe(notify({ message: 'Images task complete' }));
 });
 
-gulp.task('css', function() {
+gulp.task('styles', function() {
     var plugins = [
         autoprefixer({browser: ['last 1 version']}),
         cssnano()
@@ -43,4 +43,27 @@ gulp.task('css', function() {
 
 gulp.task('clean', function() {
     return del(['./prod/code', './prod/images']);
+});
+
+gulp.task('default', ['clean'], function() {
+    gulp.start('styles', 'scripts', 'images');
+});
+
+gulp.task('watch', function() {
+    // Watch .css files
+    gulp.watch('./src/*.css', ['styles']);
+
+    // Watch .js files
+    gulp.watch('./src/*.js', ['scripts']);
+
+    // Watch images files
+    gulp.watch('./images/***/**.*', ['images']);
+})
+
+gulp.task('watch', function() {
+    // Create LiveReload server
+    livereload.listen();
+
+    // Watch any files in prod/, reload on change
+    gulp.watch(['prod/**']).on('change', livereload.changed);
 });

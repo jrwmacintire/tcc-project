@@ -60,7 +60,7 @@ body {
 .bot-trigger {
     height: 35px;
     transition-property: height;
-    transtion-duration: 3s;
+    transition-duration: 3s;
     transition-timing-function: ease-out;
 }
 
