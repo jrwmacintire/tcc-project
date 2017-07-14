@@ -1,0 +1,32 @@
+{
+  "name": "tcc-project",
+  "version": "1.0.0",
+  "description": "Website for The Closing Cut Desairology - Carlos Canez - canez17@live.com",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "git": "^0.1.5",
+    "gulp": "^3.9.1",
+    "jshint": "^2.9.5",
+    "vim": "^0.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "./tcc-site"
+  },
+  "keywords": [
+    "tcc",
+    "closing",
+    "cut",
+    "desairology",
+    "carlos",
+    "canez",
+    "first",
+    "spa"
+  ],
+  "author": "John MacIntire",
+  "license": "ISC"
+}

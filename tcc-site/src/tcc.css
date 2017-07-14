@@ -1,9 +1,6 @@
 
 html {
   background: url(http://res.cloudinary.com/theclosingcut/image/upload/v1493327500/bg-orange-sky_lxsnbk.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   padding: 0;
   margin: 0;
@@ -12,7 +9,6 @@ html {
 /* ADDS BLUR AFTER LANDING SEQUENCE */
 
 .addBlur {
-  -webkit-filter: blur(5px);
   filter: blur(5px);
 }
 
@@ -40,7 +36,7 @@ body {
 .trans-top {
     background-color: transparent;
     height: 245px;
-    padding-top: 50px;
+    padding-top: 70px;
 }
 
 .trans-bot {
@@ -49,11 +45,11 @@ body {
 }
 
 .top-trigger {
-    height: 75px;
-    padding-top: 50px;
+    height: 95px;
+    padding-top: 70px;
     /*margin-top: 50px;*/
     transition-property: height;
-    transtion-duration: 3s;
+    transition-duration: 3s;
     transition-timing-function: ease-out;
 }
 
@@ -73,43 +69,54 @@ body {
 /* NAVBAR FADE IN ATTEMPT# 4999 */
 /* TODO: fix navbar so that it doesn't slide up when you scroll on small devices ( fine on larger screens ). */
 
+nav {
+    background-color: #FFFCF7;
+}
+
 .navbar {
-  display: none;
-  box-shadow: 0 55px 6px -6px #000;
+    height: 70px;
+    display: none;
+    box-shadow: 0 55px 6px -6px #000;
 }
 
 div.navbar-logo {
     width: 240px;
     vertical-align: middle;
     padding: 0;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 /* REMOVING PADDING ON RIGHT SIDE OF COLLAPSED NAVBAR BUTTONS */
 
 button.navbar-toggle {
-    margin-right: 0;
+    margin: 16px 0;
 }
+
+/* INHERITS BACKGROUND COLOR FROM NAVBAR */
+
+/* TODO: Fix dropdown for mobile menu's transparent background */
+    background-color: !important #FFFCF7;
 
 /* DIV FOR NAVBAR'S BRAND AND BUTTONS (INLINE-BLOCK ALIGNMENT) */
 
 .navbar--block {
-  display: inline-block;
+    display: inline-block;
 }
 
 /* NAVBAR-BRAND FONT SIZE CHANGE */
 
 .navbar-brand {
-  font-size: 24px;
-  font-family: 'Oswald', sans-serif;
-  letter-spacing: 2px;
-  color: rgb(0, 33, 66) !important;
+    font-size: 24px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    color: rgb(0, 33, 66) !important;
 }
 
 /* ADDS MARGIN TO CENTER NAV LINKS */
 
 a.nav--links {
-  padding: 10px 0;
+    padding: 10px 0;
+    margin: 10px 0;
 }
 
 /*button.navbar-toggle.collapsed {
@@ -119,44 +126,44 @@ a.nav--links {
 /* STYLING FOR NAVBAR BUTTONS' HOVER STATE */
 
 #ourvisionlink:hover, #ourserviceslink:hover, #testimonialslink:hover, #contactslink:hover, #contactslink:active {
-  background-color: #EAEAF9;
+    background-color: #EAEAF9;
 }
 
 /* DROPDOWN MENU WIDTH */
 
 .dropdown-menu {
-  width: 300px;
+    width: 300px;
 }
 
 /* ENABLES DROPDOWN ON HOVER */
 
 @media (min-width: 767px) {
-  .dropdown:hover .dropdown-menu {
-    display: block;
-  }
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
 }
 
 /* REMOVE LINK STYLING FROM BRAND (EXCEPT FOR ACTIVE STATE) */
 
 a:hover, a:visited, a:link, a:active {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 
 /* STYLING FOR NAVBAR LINK FONT */
 
 .navbar-nav {
-  font-family: 'Yantramanav', sans-serif;
-  font-size: 14px;
-  letter-spacing: 1px;
-  /*margin-top: 6px;*/
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    /*margin-top: 6px;*/
 }
 
 /* MOVES DROPDOWN ITEMS TO THE RIGHT */
 
 .menu--contacts {
-  margin-left: 20px;
-  padding: 10px 0;
+    margin-left: 20px;
+    padding: 10px 0;
 }
 
 
@@ -190,24 +197,25 @@ a:hover, a:visited, a:link, a:active {
 }
 
 .well--ourvision {
-  background: inherit !important;
-  color: #3F352D;
-  border: none;
-  border-radius: 1.5px;
-  margin: auto;
-  padding: 0 15px;
-  box-shadow: none !important;
+    max-width: 450px;
+    background: inherit !important;
+    color: #3F352D;
+    border: none;
+    border-radius: 1.5px;
+    margin: auto;
+    padding: 0 15px;
+    box-shadow: none !important;
 }
 
 /* STYLING FOR OUR VISION HEADER */
 
 h1.ov--header {
-  font-family: 'Oswald', sans-serif;
-  font-size: 42px;
-  font-weight: 400;
-  text-align: center;
-  letter-spacing: 5px;
-  margin: 65px 0 0 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 42px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 5px;
+    margin: 65px 0 0 0;
 }
 
 /* STYLING FOR OUR VISION CONTENT */
@@ -450,14 +458,14 @@ div#ourservices--carousel {
     font-size: 28px;
     text-align: center;
     margin-top: 0;
-    margin-bottom: 20px;
+    margin: 5px 0 20px 0;
 }
 
 .os--description > p {
     font-family: 'Yantramanav', sans-serif;
     font-size: 17px;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .os--haircuts {
@@ -543,7 +551,7 @@ hr.os--under-carousel {
     width: 275px;
     border: none;
     border-top: 1.25px solid rgba(255, 147, 40, 0.6);
-    margin: 0 auto 45px auto;
+    margin: 15px auto 45px auto;
 }
 
 
@@ -655,9 +663,11 @@ form#form--font {
 
   p.ov--content-vision {
       font-size: 19px;
+      margin-bottom: 30px;
   }
 
   p.ov--content-services {
+      margin: 10px 0;
       font-size: 17px;
   }
 
@@ -954,7 +964,7 @@ button {
 }
 
 .divider--lightblue {
-  background: rgba(232, 244, 255, 0.9);
+  background: rgba(232, 244, 255, 0.68);
   height: 6px;
 }
 
