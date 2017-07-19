@@ -953,6 +953,7 @@ button {
 
 p.footer--text {
     color: white;
+    font-family: 'Yantramanav', sans-serif;
     letter-spacing: 0.5px;
     text-align: center;
     margin: 5px 0;

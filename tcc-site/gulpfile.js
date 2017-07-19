@@ -14,6 +14,15 @@ var gulp = require('gulp'),
     sitemap = require('gulp-sitemap'),
     del = require('del');
 
+// var supported = [
+//     'last 2 versions',
+//     'safari >= 8',
+//     'ie >= 10',
+//     'ff >= 20',
+//     'ios 6',
+//     'android 4'
+// ];
+
 // JAVASCRIPT TASK
 gulp.task('js', function() {
     return gulp.src('./src/js/*.js')
@@ -42,16 +51,15 @@ gulp.task('php', [], function() {
 });
 
 // STYLES
-gulp.task('css', function() {
-    var plugins = [
-        autoprefixer({browsers: ['last 1 version']}),
-        cssnano()
-    ];
-    return gulp.src('./src/css/*.css')
-        .pipe(postcss(plugins))
-        .pipe(gulp.dest('./build/css/'))
-        .pipe(notify({ message: '.css tasks complete.' }));
-});
+// gulp.task('css', function() {
+//     return gulp.src(['.src/css/*.css'])
+//         .pipe(cssnano({
+//             autoprefixer: {browsers: supported, add: true}
+//         }))
+//         .pipe(gulp.dest('./build/css/'))
+// });
+
+
 
 // IMAGES
 gulp.task('images', function() {
