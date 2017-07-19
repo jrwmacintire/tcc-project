@@ -4,12 +4,27 @@
   "description": "Website for The Closing Cut Desairology - Carlos Canez - canez17@live.com",
   "main": "gulpfile.js",
   "dependencies": {
+    "cssnano": "^3.10.0",
+    "del": "^3.0.0",
     "git": "^0.1.5",
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-cache": "^0.4.6",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlclean": "^2.7.14",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-livereload": "^3.8.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-uglify": "^3.0.0",
     "jshint": "^2.9.5",
     "vim": "^0.1.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@cedx/gulp-php-minify": "^4.0.0",
+    "gulp-size": "^2.1.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
