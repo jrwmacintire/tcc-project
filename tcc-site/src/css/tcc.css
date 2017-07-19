@@ -762,6 +762,10 @@ form#form--font {
       font-size: 30px;
   }
 
+  div.submit--button-wrapper {
+      margin: 20px 0;
+  }
+
   div.counsel--services {
       padding: 0;
   }
@@ -778,9 +782,9 @@ form#form--font {
 
 div.container--trigger {
     background-color: #CEFFDD;
-    height: 90px;
+    height: 100px;
     font-family: 'Yantramanav', sans-serif;
-    border-top: 2px solid #545454;
+    border-top: 2px solid rgba(16, 64, 102, 0.8);
 }
 
 div.trigger--flex {
@@ -793,24 +797,35 @@ div.trigger--flex {
     -webkit-flex-flow: column;
     justify-content: center;
     align-items: center;
+    color: rgba(16, 64, 102, 0.825);
     margin-top: 14px;
 }
 
-div.trigger--flex > h4 {
-    flex-grow: 100%;
+h4.trigger--link {
+    flex-grow: 1;
     order: 1;
     text-align: center;
+    font-family: 'Yantramanav', sans-serif;
     font-size: 16px;
     letter-spacing: 0.5px;
     margin: 9px 0;
-    opacity: 0.75;
+    opacity: 0.825;
 }
 
-div.trigger--flex > i {
-    flex-grow: 100%;
+h3.trigger--link {
+    flex-grow: 1;
     order: 2;
     text-align: center;
-    opacity: 0.75;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 18px;
+    opacity: 0.825;
+    border-bottom: 1.25px solid rgba(16, 64, 102, 0.825);
+    margin: 0;
+}
+
+h3.trigger--link:hover {
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 
@@ -868,7 +883,7 @@ div.counsel--img {
 
 div.counsel--services {
     /* Flex code */
-    flex-grow: 100%;
+    flex-grow: 1;
     width: 350px;
     font-family: 'Yantramanav', sans-serif;
     font-size: 17px;
@@ -927,18 +942,30 @@ button {
 
 
 .footer {
-    display: flex;
     background-color: #545454;
+    text-align: center;
     /*Set the fixed height of the footer here.*/
-    height: 60px;
+    height: 120px;
     width: 100%;
     bottom: 0;
-    position: center;
+    padding: 15px 0;
 }
 
-div.footer--text {
-    
+p.footer--text {
     color: white;
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin: 5px 0;
+}
+
+a.footer--link {
+    color: white;
+}
+
+a.footer--link:hover {
+    color: rgb(255, 192, 150);
+    letter-spacing: 0.5px;
+    border-bottom: 0.5px solid rgb(255, 192, 150);
 }
 
 

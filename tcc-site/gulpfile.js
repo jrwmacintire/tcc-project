@@ -11,6 +11,7 @@ var gulp = require('gulp'),
     notify = require('gulp-notify'),
     cache = require('gulp-cache'),
     livereload = require('gulp-livereload'),
+    sitemap = require('gulp-sitemap'),
     del = require('del');
 
 // JAVASCRIPT TASK
@@ -58,6 +59,18 @@ gulp.task('images', function() {
         .pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
         .pipe(gulp.dest('./build/images/'))
         .pipe(notify({ message: 'Images task complete.' }));
+});
+
+// SITEMAP
+
+gulp.task('sitemap', function() {
+    return gulp.src('./build/**/*.html', {
+        read: false
+    })
+        .pipe(sitemap({
+            siteUrl: 'http://www.theclosingcut.com'
+        }))
+        .pipe(gulp.dest('./build'));
 });
 
 // CLEAN
