@@ -1,20 +1,51 @@
 <?php
-    if(isset($_POST['submit'])){
-        $to = "jrwmacintire@gmail.com"; // recipient email address goes here
-        $from = $_POST['email']; // sender's email address
-        $first_name = $_POST['first_name'];
-        $last_name = $_POST['last_name'];
-        $subject = "Form submission.";
-        $subject2 = "Copy of your form submission.";
-        $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
-        $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
+    require './vendor/autoload.php';
 
-        $headers = "From: " . $from;
-        $headers2 = "From: " . $to;
-        mail($to,$subject,$message,$headers);
-        mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
-        echo "Mail sent. Thank you " . $first_name . ", we will contact you shortly.";
-        // You can also use 'header('Location: thank_you.php');' to redirect to another page.
-        // You cannot use 'header' and 'echo' together. It's one or the other.
+    // Instantiate a new PHPMailer
+    $mail = new PHPMailer;
+
+    // Tell PHPMailer to use SMTP
+    $mail->isSMTP();
+
+    // Host Region
+    $mail->Host = 'email-smtp.us-west-2.amazonaws.com';
+
+    // Tells PHPMailer to use SMTP authentication
+    $mail->SMTPAuth = true;
+
+    // SMTP username
+    $mail->Username = 'AKIAIS5GXWVQ2SFKS6DA';
+
+    // SMTP password
+    $mail->Password = 'Atb0xYuE+vMnIsEojTNKSNFNKMHN5iJrZWS9EAWlVJQy';
+
+    // Enable SSL encryption
+    $mail->SMTPSecure = 'ssl';
+
+    // SMTP mail port
+    $mail->Port = 465;
+
+    $mail->setFrom('jrwmacintire@gmail.com');
+
+    $mail->addAddress('john@theclosingcut.com');
+
+    // Add HTML email functionality
+    $mail->isHTML(true);
+
+    // Subject line of email
+    $mail->Subject = 'Amazon SES test (SMTP interface accessed using PHP)';
+
+    // Body of email
+    $mail->Body = '<h1>Email Test</h1>
+                   <p>This email was sent through the <a href="http://aws.amazon.com/ses/">Amazon SES</a> SMTP interface using the <a href="https://github.com/PHPMailer/PHPMailer"> PHPMailer</a> class.</p>';
+
+    // Alternative email, for non-HTML email client
+    $mail->AltBody = "Email Test\r\nThis email was sent through the Amazon SES SMTP interface using the PHPMailer class.";
+
+    if(!$mail->send()) {
+        echo 'Email not sent.';
+        echo 'Mailer Error: ' . $mail->ErrorInfo;
+    } else {
+        echo 'Email sent!';
     }
 ?>

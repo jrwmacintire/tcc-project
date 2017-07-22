@@ -261,15 +261,22 @@ hr.ov--headline {
     width: 275px;
     border: none;
     border-top: 1.25px solid rgba(255, 147, 40, 0.6);
-    margin: 35px auto;
+    margin: 40px auto;
 }
 
 img.blue-border {
     border: 3px solid rgb(31, 66, 86);
 }
 
-.ov--img-row {
+.ov--img-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 85px;
+}
+
+img.portrait {
+    max-width: 425px;
 }
 
 
@@ -565,9 +572,11 @@ hr.os--under-carousel {
                           /*                    */
 
 .well--contacts {
+    min-width: 440px;
     background: rgba(234, 247, 255, 0.6) !important;
     color: #03264c;
     letter-spacing: 1px;
+    padding-bottom: 0;
     border-radius: 1.5px;
     margin: 60px 0;
 }
@@ -606,7 +615,7 @@ form#form--font {
 
 .submit--button-wrapper {
     text-align: center;
-    margin: 30px;
+    margin: 40px;
 }
 
 .submit--button {
@@ -630,6 +639,10 @@ form#form--font {
   color: white;
   box-shadow: 0 2px 1px 1px #063568;
   transform: translateY(3px);
+}
+
+div#no-margin {
+    margin: 0;
 }
 
 /* CONTACTS HR TAG STYLING */
@@ -758,6 +771,10 @@ form#form--font {
       padding-right: 0;
   }
 
+  div.well--contacts {
+      min-width: 300px;
+  }
+
   div.well--contacts > h1 {
       font-size: 30px;
   }
@@ -848,32 +865,26 @@ div.container--counsel {
 div.container--counsel-close {
     height: 0;
 
-    -webkit-transition-property: height;
     transition-property: height;
-    -webkit-transition-duration: 3s;
     transition-duration: 3s;
-    -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
 }
 
 div.counsel--flex {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
-
-    -webkit-flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+
+    flex-flow: row wrap;
     margin-top: 40px;
     margin-bottom: 40px;
 }
 
 div.counsel--img {
     /* Flex code */
-    flex-grow: 0 50%;
-    width: 350px;
+    flex-grow: 50%;
+    order: 1;
+    width: 450px;
     text-align: center;
 }
 
@@ -883,8 +894,9 @@ div.counsel--img {
 
 div.counsel--services {
     /* Flex code */
-    flex-grow: 1;
-    width: 350px;
+    flex-grow: 50%;
+    order: 2;
+    width: 450px;
     font-family: 'Yantramanav', sans-serif;
     font-size: 17px;
     padding: 20px 30px;
