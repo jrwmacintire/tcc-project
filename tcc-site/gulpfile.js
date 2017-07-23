@@ -56,7 +56,7 @@ gulp.task('css', function() {
         autoprefixer({ browers: ['last 1 version']}),
         cssnano()
     ];
-    return gulp.src('./src/*.css')
+    return gulp.src('./src/css/*.css')
         .pipe(postcss(plugins))
         .pipe(gulp.dest('./build/css/'));
 });

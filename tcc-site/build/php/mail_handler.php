@@ -25,9 +25,11 @@
     // SMTP mail port
     $mail->Port = 465;
 
-    $mail->setFrom('jrwmacintire@gmail.com');
+    $mail->setFrom('john@theclosingcut.com');
 
-    $mail->addAddress('john@theclosingcut.com');
+    // Recipients
+    $mail->addAddress('carlos@theclosingcut.com');
+    $mail->addAddress('jrwmacintire@gmail.com');
 
     // Add HTML email functionality
     $mail->isHTML(true);
@@ -37,7 +39,11 @@
 
     // Body of email
     $mail->Body = '<h1>Email Test</h1>
-                   <p>This email was sent through the <a href="http://aws.amazon.com/ses/">Amazon SES</a> SMTP interface using the <a href="https://github.com/PHPMailer/PHPMailer"> PHPMailer</a> class.</p>';
+                   <p>This email was sent through the <a href="http://aws.amazon.com/ses/">Amazon SES</a> SMTP interface using the <a href="https://github.com/PHPMailer/PHPMailer"> PHPMailer</a> class.</p>
+                   <p>Name: ' . $_POST['full_name'] . '</p>
+                   <p>Email address: ' . $_POST['email'] . '</p>
+                   <p>Phone number: ' . $_POST['phone_number'] . '</p>
+                   <p>Message: ' . $_POST['message'] . '</p>';
 
     // Alternative email, for non-HTML email client
     $mail->AltBody = "Email Test\r\nThis email was sent through the Amazon SES SMTP interface using the PHPMailer class.";

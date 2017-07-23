@@ -71,6 +71,7 @@ body {
 
 div.container--nav {
     background-color: rgb(255, 252, 247);
+    padding: 0;
 }
 
 .navbar {
@@ -197,6 +198,7 @@ a:hover, a:visited, a:link, a:active {
 
 .container--ourvision {
   background-color: rgba(232, 244, 255, 0.68);
+  padding: 0;
 }
 
 .well--ourvision {
@@ -276,7 +278,7 @@ img.blue-border {
 }
 
 img.portrait {
-    max-width: 425px;
+    max-width: 450px;
 }
 
 
@@ -664,23 +666,32 @@ div#no-margin {
                             /*                    */
 
 @media screen and (max-width: 500px) {
-  .ov--header {
-      font-size: 30px;
-  }
 
-  hr.ov--headline {
-      width: 150px;
-  }
+    div.navbar-logo {
+        display: none;
+    }
 
-  img#ov--img {
-      padding: 0;
-      margin-bottom: 0;
-  }
+    img.portrait {
+        max-width: 100%;
+    }
 
-  p.ov--content-vision {
-      font-size: 19px;
-      margin-bottom: 30px;
-  }
+    .ov--header {
+        font-size: 30px;
+    }
+
+    hr.ov--headline {
+        width: 150px;
+    }
+
+    img#ov--img {
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    p.ov--content-vision {
+        font-size: 19px;
+        margin-bottom: 30px;
+    }
 
   p.ov--content-services {
       margin: 10px 0;
@@ -836,7 +847,6 @@ h3.trigger--link {
     font-family: 'Yantramanav', sans-serif;
     font-size: 18px;
     opacity: 0.825;
-    border-bottom: 1.25px solid rgba(16, 64, 102, 0.825);
     margin: 0;
 }
 
