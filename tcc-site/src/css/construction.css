@@ -1,0 +1,101 @@
+html {
+    background: url('https://res.cloudinary.com/theclosingcut/image/upload/v1495922303/sunset_blue_red_hofrxa.jpg') no-repeat center center fixed;
+    font-size: 1em;
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+    html {  background-color: #002b59;  }
+}
+
+/* Main content area */
+div.content {
+    /* Flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Size */
+    /*height: 30em;
+    width: 40em;*/
+    /* Positioning */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2em 1em;
+    margin: auto;
+    /* Text */
+    font-family: "News Cycle", sans-serif;
+    color: #FEF0CE;
+    letter-spacing: 0.07em;
+}
+
+/* Sections within 'content' */
+div.logo {
+    margin-bottom: 2.6em;
+}
+
+div.thank-you {
+    padding-bottom: 0.12em;
+    font-size: 2.25em;
+    font-weight: 600;
+    text-align: center;
+}
+
+div.description {
+    /* Size */
+    /*width: 600px;*/
+    /* Positioning */
+    /* Font */
+    font-size: 0.72em;
+    text-align: center;
+}
+
+div.message {
+    /* Positioning */
+    margin: 0.26rem;
+    /* Font */
+    font-size: 1.25em;
+    font-weight: 500;
+    text-align: center;
+}
+
+div.contacts {
+    /* Positioning */
+    margin: 1.85em;
+    /* Flexbox */
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+/* Individual 'contacts' info areas */
+div.email, div.phone, div.fax {
+    align-self: center;
+    border-bottom: 0.08em solid transparent;
+    margin: 0.24em;
+    text-align: center;
+}
+
+div.email:hover, div.phone:hover, div.fax:hover {
+    border-bottom: 0.08em solid #FEF0CE;
+}
+
+hr.divider {
+    /* Size */
+    width: 200px;
+    /* Positioning */
+    margin: 1.4em;
+    /* Style */
+    border: none;
+    border-bottom: 1.35px solid #ff934c;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+@media screen and (min-width: 500px) {
+    html { font-size: 1.25em; }
+
+    div.description { width: 500px; }
+}

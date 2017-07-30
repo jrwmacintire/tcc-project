@@ -53,7 +53,7 @@ gulp.task('php', [], function() {
 // STYLES
 gulp.task('css', function() {
     var plugins = [
-        autoprefixer({ browers: ['last 1 version']}),
+        autoprefixer({ browsers: ['last 1 version']}),
         cssnano()
     ];
     return gulp.src('./src/css/*.css')

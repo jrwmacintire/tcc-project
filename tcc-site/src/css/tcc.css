@@ -424,7 +424,7 @@ img.logo2.is-showing {
 }
 
 .well--ourservices > h1 {
-    font-family: 'Oswald', serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 45px;
     font-weight: 400 !important;
     letter-spacing: 6px;
@@ -444,7 +444,7 @@ div#ourservices--carousel {
     display: -webkit-flex;
     display: flex;
 
-    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
     justify-content: space-around;
 }
 
@@ -609,7 +609,7 @@ hr.os--under-carousel {
   letter-spacing: 2px;
 }
 
-form#form--font {
+form.form-style {
   font-family: 'Yantramanav', sans-serif;
 }
 

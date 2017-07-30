@@ -47,6 +47,10 @@
     // Alternative email, for non-HTML email client
     $mail->AltBody = "Email Test\r\nThis email was sent through the Amazon SES SMTP interface using the PHPMailer class.";
 
+    if(isset('full_name')){
+
+    }
+
     if(!$mail->send()) {
         echo 'Email not sent.';
         echo 'Mailer Error: ' . $mail->ErrorInfo;

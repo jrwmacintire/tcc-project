@@ -13,6 +13,7 @@ function goToByScroll(id) {
     goToByScroll($(this).attr("id"));
 });
 
+// NAVBAR FADES IN
 function fade() {
   // Fade navbar in
   $('.navbar').fadeIn(2000);
@@ -47,4 +48,12 @@ $(window).scroll(function() {
   if(wScroll > $('#ov--img').offset().top - 140) {
     $('.logo2').addClass('is-showing');
   }
+});
+
+//
+$('form-style').on('submit', function(e) {
+    // Prevent event from reloading site.
+    e.preventDefault();
+
+    
 });
