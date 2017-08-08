@@ -87,6 +87,10 @@ div.navbar-logo {
     margin: 20px 0;
 }
 
+div.small-navbar-logo {
+    display: none;
+}
+
 /* REMOVING PADDING ON RIGHT SIDE OF COLLAPSED NAVBAR BUTTONS */
 
 button.navbar-toggle {
@@ -438,10 +442,6 @@ div#ourservices--carousel {
 }
 
 .os--flex {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
 
     flex-flow: row wrap;
@@ -573,6 +573,10 @@ hr.os--under-carousel {
                           /*                    */
                           /*                    */
 
+div.container--contact {
+    padding: 0 auto;
+    margin: 0;
+}
 .well--contacts {
     min-width: 440px;
     background: rgba(234, 247, 255, 0.6) !important;
@@ -669,6 +673,14 @@ div#no-margin {
 
     div.navbar-logo {
         display: none;
+    }
+
+    div.small-navbar-logo {
+        display: inline-block;
+        width: 45px;
+        vertical-align: middle;
+        padding: 0;
+        margin: 12px 0;
     }
 
     img.portrait {
@@ -795,8 +807,15 @@ div#no-margin {
   }
 
   div.counsel--services {
+      max-width: 100%;
       padding: 0;
   }
+
+  div.counsel--img {
+      max-width: 100%;
+      padding: 0;
+  }
+
 }
 
 
@@ -891,10 +910,7 @@ div.counsel--flex {
 }
 
 div.counsel--img {
-    /* Flex code */
-    flex-grow: 50%;
     order: 1;
-    width: 450px;
     text-align: center;
 }
 
@@ -906,7 +922,7 @@ div.counsel--services {
     /* Flex code */
     flex-grow: 50%;
     order: 2;
-    width: 450px;
+    max-width: 400px;
     font-family: 'Yantramanav', sans-serif;
     font-size: 17px;
     padding: 20px 30px;
