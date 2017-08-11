@@ -825,7 +825,7 @@ div#no-margin {
   }
 
   div.sitemap--wrapper-small {
-      display: block;
+      display: block !important;
       width: 320px;
       height: 600px;
       margin: 40px auto;
@@ -1036,6 +1036,10 @@ div.container--sitemap-close {
 div.sitemap--wrapper {
     width: 600px;
     margin: 100px auto;
+}
+
+div.sitemap--wrapper-small {
+    display: none;
 }
 
 
