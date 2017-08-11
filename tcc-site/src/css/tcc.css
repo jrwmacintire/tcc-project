@@ -1,6 +1,6 @@
 
 html {
-  background: url(http://res.cloudinary.com/theclosingcut/image/upload/v1493327500/bg-orange-sky_lxsnbk.jpg) no-repeat center center fixed;
+  background: url("../images/bg-orange-sky.png") no-repeat center center fixed;
   background-size: cover;
   padding: 0;
   margin: 0;
@@ -574,7 +574,7 @@ hr.os--under-carousel {
                           /*                    */
 
 div.container--contact {
-    padding: 0 auto;
+    padding: 0;
     margin: 0;
 }
 .well--contacts {
@@ -816,6 +816,21 @@ div#no-margin {
       padding: 0;
   }
 
+  div.container--sitemap {
+      height: 960px !important;
+  }
+
+  div.sitemap--wrapper {
+      display: none;
+  }
+
+  div.sitemap--wrapper-small {
+      display: block;
+      width: 320px;
+      height: 600px;
+      margin: 40px auto;
+  }
+
 }
 
 
@@ -835,13 +850,9 @@ div.container--trigger {
 }
 
 div.trigger--flex {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
 
-    -webkit-flex-flow: column;
+    flex-flow: column;
     justify-content: center;
     align-items: center;
     color: rgba(16, 64, 102, 0.825);
@@ -884,8 +895,6 @@ h3.trigger--link:hover {
 
 div.container--counsel {
     background-color: #E7E7E7;
-    -webkit-box-shadow: inset 1px 7px 22px -2px rgba(0,0,0,0.35);
-    -moz-box-shadow: inset 1px 7px 22px -2px rgba(0,0,0,0.35);
     box-shadow: inset 1px 7px 22px -2px rgba(0,0,0,0.35);
 }
 
@@ -920,7 +929,6 @@ div.counsel--img {
 
 div.counsel--services {
     /* Flex code */
-    flex-grow: 50%;
     order: 2;
     max-width: 400px;
     font-family: 'Yantramanav', sans-serif;
@@ -1005,6 +1013,29 @@ a.footer--link:hover {
     color: rgb(255, 192, 150);
     letter-spacing: 0.5px;
     border-bottom: 0.5px solid rgb(255, 192, 150);
+}
+
+                            /*                    */                            /*                    */
+                            /*       SITEMAP      */
+                            /*                    */
+                            /*                    */
+
+div.container--sitemap {
+    height: 1800px;
+    background: #FFF8EA;
+}
+
+div.container--sitemap-close {
+    height: 0;
+
+    transition-property: height;
+    transition-duration: 3s;
+    transition-timing-function: ease-out;
+}
+
+div.sitemap--wrapper {
+    width: 600px;
+    margin: 100px auto;
 }
 
 
@@ -1125,4 +1156,28 @@ a.footer--link:hover {
     70% { top: 3px; }
     80% { top: 2px; }
     100% { top: 0px; }
+}
+
+
+
+
+
+/*      ERROR PAGE CSS CODE     */
+/*      ERROR PAGE CSS CODE     */
+/*      ERROR PAGE CSS CODE     */
+/*      ERROR PAGE CSS CODE     */
+/*      ERROR PAGE CSS CODE     */
+/*      ERROR PAGE CSS CODE     */
+/*      ERROR PAGE CSS CODE     */
+
+div.error-box {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #0089a8;
 }

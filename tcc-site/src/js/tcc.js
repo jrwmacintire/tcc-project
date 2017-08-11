@@ -53,7 +53,6 @@ $(window).scroll(function() {
 //
 $('form-style').on('submit', function(e) {
     // Prevent event from reloading site.
-    e.preventDefault();
-
     
+
 });
