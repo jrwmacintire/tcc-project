@@ -37,9 +37,9 @@ gulp.task('js', function() {
 
 // MOVE HTML FILE, NO MINIFICATION OR COMPRESSION
 gulp.task('html', [], function() {
-    gulp.src("./src/html/*.html")
+    gulp.src("./src/*.html")
         .pipe(htmlclean())
-        .pipe(gulp.dest('./build/html/'))
+        .pipe(gulp.dest('./build/'))
         .pipe(notify({ message: '.html task complete.'}));
 });
 
@@ -63,7 +63,7 @@ gulp.task('css', function() {
 
 // IMAGES
 gulp.task('images', function() {
-    return gulp.src('./src/images/*.*')
+    return gulp.src('./src/images/*.png')
         .pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
         .pipe(gulp.dest('./build/images/'))
         .pipe(notify({ message: 'Images task complete.' }));
@@ -71,7 +71,7 @@ gulp.task('images', function() {
 
 // SITEMAP
 gulp.task('sitemap', function() {
-    return gulp.src('./build/**/*.html', {
+    return gulp.src('./build/*.html', {
         read: false
     })
         .pipe(sitemap({
@@ -93,7 +93,7 @@ gulp.task('default', ['clean'], function() {
 // WATCH
 gulp.task('watch', function() {
     // Watch .html files
-    gulp.watch('./src/html/*.html', ['html']);
+    gulp.watch('./src/*.html', ['html']);
 
     // Watch .css files
     gulp.watch('./src/css/*.css', ['css']);

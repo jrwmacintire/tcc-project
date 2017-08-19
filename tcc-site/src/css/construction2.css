@@ -1,6 +1,9 @@
+
 html {
     background: url("../images/sunset-blue-red.png") no-repeat center center fixed;
     font-size: 1em;
+    padding: 0;
+    margin: 0;
 }
 
 @media only screen and (min-width : 320px) and (max-width : 480px) {

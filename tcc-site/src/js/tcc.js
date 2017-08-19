@@ -53,6 +53,14 @@ $(window).scroll(function() {
 //
 $('form-style').on('submit', function(e) {
     // Prevent event from reloading site.
-    
+});
 
+$('.carousel--image').mouseenter(function() {
+    $('.fade-text').animate({
+        opacity: 0
+    }, 500);
+}).mouseleave(function() {
+    $('.fade-text').animate({
+        opacity: 1
+    }, 500);
 });
