@@ -1,1 +1,1239 @@
-html{background:url(../images/bg-orange-sky.png) no-repeat 50% fixed;background-size:cover;padding:0;margin:0}.addBlur{-webkit-filter:blur(5px);filter:blur(5px)}body{background-color:transparent!important;margin:0;padding:0}.well{border:none!important}.row{margin:0!important}.container-fluid{padding:0!important}.trans-top{height:245px;padding-top:70px}.trans-bot,.trans-top{background-color:transparent}.trans-bot{height:410px}.top-trigger{height:95px;padding-top:70px}.bot-trigger,.top-trigger{transition-property:height;transition-duration:3s;transition-timing-function:ease-out}.bot-trigger{height:35px}div.container--nav{background-color:#fffcf7;padding:0}.navbar{height:70px;display:none;box-shadow:0 55px 6px -6px #000}div.navbar-logo{width:240px;vertical-align:middle;padding:0;margin:20px 0}div.small-navbar-logo{display:none}button.navbar-toggle{margin:16px 0}div.navbar-header{height:70px;background-color:#fffcf7}.navbar--block{display:inline-block}.navbar-brand{font-size:24px;font-family:Oswald,sans-serif;letter-spacing:2px;color:#002142!important}a.nav--links{padding:10px 0;margin:10px 0}#contactslink:active,#contactslink:hover,#ourserviceslink:hover,#ourvisionlink:hover,#testimonialslink:hover{background-color:#eaeaf9}.dropdown-menu{width:300px}@media (min-width:767px){.dropdown:hover .dropdown-menu{display:block}}a:active,a:hover,a:link,a:visited{text-decoration:none}.navbar-nav{font-family:Yantramanav,sans-serif;font-size:14px;letter-spacing:1px}.menu--contacts{margin-left:20px;padding:10px 0}.tooltip--light-blue+.tooltip>.tooltip-inner{background-color:#d3f4ff}.container--ourvision{background-color:rgba(232,244,255,.68);padding:0}.well--ourvision{max-width:450px;background:inherit!important;color:#3f352d;border:none;border-radius:1.5px;margin:auto;padding:0 15px;box-shadow:none!important}h1.ov--header{font-family:Oswald,sans-serif;font-size:42px;font-weight:400;text-align:center;letter-spacing:5px;margin:65px 0 0}p.ov--content-vision{font-family:Yantramanav,sans-serif;font-size:21px;font-weight:700;text-align:center;margin-bottom:20px;opacity:0;-webkit-transform:translateX(-20px);transform:translateX(-20px);transition:all .3s ease-in-out}p.ov--content-vision.is-showing{opacity:1;-webkit-transform:translateX(0);transform:translateX(0)}p.ov--content-services{opacity:0;font-family:Yantramanav,sans-serif;font-size:17px;text-align:center;-webkit-transform:translateX(-20px);transform:translateX(-20px);transition:all .5s ease-in-out}p.ov--content-services.is-showing{opacity:1;-webkit-transform:translateX(0);transform:translateX(0)}hr.ov--headline{width:275px;border:none;border-top:1.25px solid rgba(255,147,40,.6);margin:40px auto}img.blue-border{border:3px solid #1f4256}.ov--img-wrapper{display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center;-webkit-box-pack:center;justify-content:center;margin-bottom:85px}img.portrait{max-width:450px}.container--testimonials{background:url(https://res.cloudinary.com/theclosingcut/image/upload/v1495922303/sunset_blue_red_hofrxa.jpg) no-repeat fixed bottom;background-position:50%;border:none;margin:0;padding:0}.well--testimonials{display:-webkit-box;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;background:transparent!important;border-radius:1.5px;margin:0;color:#fef0ce;font-family:Antic Slab,sans-serif;border:none;box-shadow:none!important}.well--testimonials>h1{-webkit-box-flex:0;flex-grow:0;-webkit-box-ordinal-group:2;order:1;font-family:Oswald,serif;font-size:45px;font-weight:400;text-align:center;letter-spacing:6px;margin-top:60px}.well--testimonials>h4{-webkit-box-flex:0;flex:0;-webkit-box-ordinal-group:4;order:3;font-weight:700;font-size:22px;letter-spacing:2px}.well--testimonials>h4#relative{-webkit-box-flex:0;flex:0;-webkit-box-ordinal-group:8;order:7;font-size:24px;margin-top:0}.well--testimonials>h5{-webkit-box-flex:0;flex:0;-webkit-box-ordinal-group:7;order:6;font-weight:700;font-style:italic;font-size:18px;letter-spacing:2px}.well--testimonials>p{-webkit-box-flex:0;flex:0 60%;-webkit-box-ordinal-group:5;order:4;font-weight:700;font-size:16px;letter-spacing:2px;margin-bottom:35px}hr.hr--testimonials{-webkit-box-flex:0;flex:0;-webkit-box-ordinal-group:3;order:2;width:100%;border:2px solid #fef0ce;border-top:0;margin:25px auto}hr.hr--testimonials#bottom-hr{-webkit-box-ordinal-group:10;order:9;margin:25px auto 75px}img.logo2{margin-top:25px;opacity:0;-webkit-transform:translateY(30px);transform:translateY(30px);transition:all 1.5s ease-in-out}img.logo2.is-showing{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}div.container--ourservices{background-color:#e8f4ff;padding:0;border:none}div.carousel--container{display:-webkit-box;display:flex;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center;width:100%;height:100%}div.carousel--wrapped{max-width:500px;max-height:500px;margin:auto}.well--ourservices{background:transparent!important;color:#3f352d;font-family:Yantramanav,sans-serif;padding-top:0;padding-bottom:0;border:none;border-radius:1.5px;margin-bottom:0;box-shadow:none!important}.well--ourservices>h1{font-family:Oswald,sans-serif;font-size:45px;font-weight:400!important;letter-spacing:6px;text-align:center;margin:45px 0 30px}div#ourservices--carousel{border:3px solid #1f4256;margin:25px 0}div.carousel-caption>h4{letter-spacing:.75px}.os--flex{display:-webkit-box;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;flex-flow:row wrap;justify-content:space-around}.os--description{-webkit-box-flex:2;flex:2 100%;-webkit-box-ordinal-group:2;order:1;width:220px;margin:0 auto 10px;opacity:.85}.os--description>h2{font-size:38px;margin-top:15px;margin-bottom:0}.os--description>h2,.os--description>h3{font-family:Yantramanav,sans-serif;text-align:center}.os--description>h3{font-size:28px;margin-top:0;margin:5px 0 20px}.os--description>p{font-size:17px;margin-bottom:25px}.os--description>p,.os--haircuts{font-family:Yantramanav,sans-serif;text-align:center}.os--haircuts{-webkit-box-flex:1;flex:1 50%;-webkit-box-ordinal-group:3;order:2;width:220px;padding:0 20px;margin:0 auto 20px;opacity:.85}.os--haircuts>h4{font-size:24px;font-weight:600;letter-spacing:1px;padding-bottom:7px;border-bottom:1px solid #ff9328;margin-bottom:7px}.os--haircuts>p{font-size:18px;margin-bottom:5px}.os--shaves{-webkit-box-flex:1;flex:1 50%;-webkit-box-ordinal-group:3;order:2;font-family:Yantramanav,sans-serif;text-align:center;width:220px;padding:0 20px;margin:0 auto 20px;opacity:.85}.os--shaves>h4{font-size:24px;font-weight:600;letter-spacing:1px;padding-bottom:7px;border-bottom:1px solid #ff9328;margin-bottom:7px}.os--shaves>p{font-size:18px;margin-bottom:5px}.os--notification{-webkit-box-flex:100%;flex-grow:100%;-webkit-box-ordinal-group:4;order:3;font-family:Yantramanav,sans-serif;font-size:15px;text-align:center}div.os--notification>p{width:240px}hr.os--headline{width:100%;border:none;border-top:1.25px solid rgba(255,147,40,.6);margin:0 20px 30px}hr.os--over-carousel{margin:10px auto 15px}hr.os--over-carousel,hr.os--under-carousel{width:275px;border:none;border-top:1.25px solid rgba(255,147,40,.6)}hr.os--under-carousel{margin:15px auto 45px}div.container--contact{padding:0;margin:0}.well--contacts{min-width:440px;background:rgba(234,247,255,.6)!important;color:#03264c;letter-spacing:1px;padding-bottom:0;border-radius:1.5px;margin:60px 0}.well--contacts>h1{font-family:Oswald,serif;font-size:42px;font-weight:400;letter-spacing:6px;text-align:center;margin-top:40px}.contacts--text-wrapper{text-align:center;margin:15px 0}.contacts-text{font-size:17px;text-align:center;letter-spacing:2px}.contacts-text,form.form-style{font-family:Yantramanav,sans-serif}.submit--button-wrapper{text-align:center;margin:40px}.submit--button{background-color:#125d96;color:#fff;font-family:Yantramanav,sans-serif;font-weight:400;font-size:18px;letter-spacing:2px;padding:15px 65px;border-radius:1.5px;text-shadow:0 0 1px #000;box-shadow:0 4px 1px 1px #063568}.submit--button:hover{color:#fff}.submit--button:active{color:#fff;box-shadow:0 2px 1px 1px #063568;-webkit-transform:translateY(3px);transform:translateY(3px)}div#no-margin{margin:0}.hr--contacts{width:200px;border:1px solid rgba(255,147,40,.5);border-top:0;margin:30px auto}@media screen and (max-width:500px){div.navbar-logo{display:none}div.small-navbar-logo{display:inline-block;width:45px;vertical-align:middle;padding:0;margin:12px 0}img.portrait{max-width:100%}.ov--header{font-size:30px}hr.ov--headline{width:150px}img#ov--img{padding:0;margin-bottom:0}p.ov--content-vision{font-size:19px;margin-bottom:30px}p.ov--content-services{margin:10px 0;font-size:17px}h4.services--headers{font-size:20px}p.services--text{font-size:16px}.well--testimonials>h1{font-size:30px}.well--testimonials>h4{font-size:19px}.well--testimonials>h5{font-size:17px}.well--ourservices>h1{font-size:30px;text-align:center}.os--description>h2{font-size:24px}.os--description>h3,.os--haircuts>h4{font-size:20px}.os--haircuts>p{font-size:17px}.os--shaves>h4{font-size:20px}.os--shaves>p{font-size:17px}.os--notification{font-size:13px}.carousel--row{width:100%}div.col-lg-4.col-lg-offset-4.col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2.col-xs-12,div.col-lg-6.col-lg-offset-3.col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2.col-xs-12,div.col-lg-6.col-lg-offset-3.col-md-8.col-md-offset-2.col-sm-8.col-sm-offset-2.col-xs-12,div.col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1.col-sm-12.col-xs-12{padding-left:0;padding-right:0}div.well--contacts{min-width:300px}div.well--contacts>h1{font-size:30px}div.submit--button-wrapper{margin:20px 0}div.counsel--img,div.counsel--services{max-width:100%;padding:0}div.container--sitemap{height:960px!important}div.sitemap--wrapper{display:none}div.sitemap--wrapper-small{display:block!important;width:320px;height:600px;margin:40px auto}}div.container--trigger{background-color:#ceffdd;height:100px;font-family:Yantramanav,sans-serif;border-top:2px solid rgba(16,64,102,.8)}div.trigger--flex{display:-webkit-box;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-flow:column;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center;color:rgba(16,64,102,.825);margin-top:14px}h4.trigger--link{-webkit-box-flex:1;-webkit-box-ordinal-group:2;order:1;font-size:16px;letter-spacing:.5px;margin:9px 0}h3.trigger--link,h4.trigger--link{flex-grow:1;text-align:center;font-family:Yantramanav,sans-serif;opacity:.825}h3.trigger--link{-webkit-box-flex:1;-webkit-box-ordinal-group:3;order:2;font-size:18px;margin:0}h3.trigger--link:hover{font-weight:600;letter-spacing:1px}div.container--counsel{background-color:#e7e7e7;box-shadow:inset 1px 7px 22px -2px rgba(0,0,0,.35)}div.container--counsel-close{height:0;transition-property:height;transition-duration:3s;transition-timing-function:ease-out}div.counsel--flex{display:-webkit-box;display:flex;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center;-webkit-box-orient:horizontal;-webkit-box-direction:normal;flex-flow:row wrap;margin-top:40px;margin-bottom:40px}div.counsel--img{-webkit-box-ordinal-group:2;order:1;text-align:center}.green-border{border:.5px solid #7affa4}div.counsel--services{-webkit-box-ordinal-group:3;order:2;max-width:400px;font-family:Yantramanav,sans-serif;font-size:17px;padding:20px 30px}div.counsel--services>h4{font-weight:700;letter-spacing:1px;padding-bottom:7px;border-bottom:1.25px solid #7affa4;margin-bottom:20px}div.counsel--services>p{margin:10px 0}div.counsel--services>p.contact{padding-top:10px;border-top:1px solid #7affa4;margin-top:20px}div.counsel--services>p>i{margin-right:3px}.crosshair{background-color:pink}button{outline:none!important}.underline{padding-bottom:10px;border-bottom:.5px solid inherit}.footer{background-color:#545454;text-align:center;height:120px;width:100%;bottom:0;padding:15px 0}p.footer--text{color:#fff;font-family:Yantramanav,sans-serif;letter-spacing:.5px;text-align:center;margin:5px 0}a.footer--link{color:#fff}a.footer--link:hover{color:#ffc096;letter-spacing:.5px;border-bottom:.5px solid #ffc096}div.container--sitemap{height:1860px;background:#fff8ea}div.container--sitemap-close{height:0;transition-property:height;transition-duration:3s;transition-timing-function:ease-out}div.sitemap--wrapper{width:600px;margin:100px auto}div.sitemap--wrapper-small{display:none}div.sitemap--text-wrapper{display:-webkit-box;display:flex;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center;width:100%}p.sitemap--text{padding-bottom:60px;margin:auto;text-align:center;color:#002142;font-family:Yantramanav,sans-serif;font-weight:500}.divider--darkblue{background:#021933;height:240px}.divider--darkblue-thin{background:#021933;height:3px}.divider--aquablue{background:rgba(10,41,66,.8);height:6px}.divider--darkgrey-big{background:rgba(17,23,29,.9);height:250px;margin:0}.divider--lightblue{background:rgba(232,244,255,.68);height:6px}.divider--orange{background:rgba(255,147,76,.9);height:50px}.divider--darkgrey{background:#1f2a35;height:35px}.bounce{display:inline-block;position:relative;-webkit-animation:a .85s infinite linear;animation:a .85s infinite linear}@-webkit-keyframes a{0%{top:0}20%{top:-2px}30%{top:-3px}40%{top:-2px}50%{top:0}60%{top:2px}70%{top:3px}80%{top:2px}to{top:0}}@keyframes a{0%{top:0}20%{top:-2px}30%{top:-3px}40%{top:-2px}50%{top:0}60%{top:2px}70%{top:3px}80%{top:2px}to{top:0}}div.error-box{width:500px;height:500px;position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;background-color:#0089a8}
+
+html {
+  background: url("../images/bg-orange-sky.png") no-repeat center center fixed;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+}
+
+/* ADDS BLUR AFTER LANDING SEQUENCE */
+
+.addBlur {
+  filter: blur(5px);
+}
+
+/* CONTAINER BACKGROUND IS MADE TRANSPARENT HERE */
+
+body {
+  background-color: transparent !important;
+  margin: 0;
+  padding: 0;
+}
+
+/* REMOVE DEFAULT WELL BORDER */
+.well {
+    border: none !important;
+}
+
+/*REMOVES SPACE ON SIDE OF SCREEN*/
+
+.row {
+    margin: 0px !important;
+}
+
+/* REMOVES DIVIDER SPACING ISSUE - DIVIDER DOESN'T FIT SCREEN, TOO NARROW */
+.container-fluid {
+    padding: 0 !important;
+}
+
+                      /*                    */
+                      /*                    */
+                      /*  LANDING SEQUENCE  */
+                      /*                    */
+                      /*                    */
+
+
+.trans-top {
+    background-color: transparent;
+    height: 245px;
+    padding-top: 70px;
+}
+
+.trans-bot {
+    background-color: transparent;
+    height: 410px;
+}
+
+.top-trigger {
+    height: 95px;
+    padding-top: 70px;
+    /*margin-top: 50px;*/
+    transition-property: height;
+    transition-duration: 3s;
+    transition-timing-function: ease-out;
+}
+
+.bot-trigger {
+    height: 35px;
+    transition-property: height;
+    transition-duration: 3s;
+    transition-timing-function: ease-out;
+}
+
+                      /*                    */
+                      /*                    */
+                      /* NAVBAR STARTS HERE */
+                      /*                    */
+                      /*                    */
+
+/* NAVBAR FADE IN ATTEMPT# 4999 */
+/* TODO: fix navbar so that it doesn't slide up when you scroll on small devices ( fine on larger screens ). */
+
+div.container--nav {
+    background-color: rgb(255, 252, 247);
+    padding: 0;
+}
+
+.navbar {
+    height: 70px;
+    display: none;
+    box-shadow: 0 55px 6px -6px #000;
+}
+
+div.navbar-logo {
+    width: 240px;
+    vertical-align: middle;
+    padding: 0;
+    margin: 20px 0;
+}
+
+div.small-navbar-logo {
+    display: none;
+}
+
+/* REMOVING PADDING ON RIGHT SIDE OF COLLAPSED NAVBAR BUTTONS */
+
+button.navbar-toggle {
+    margin: 16px 0;
+}
+
+/* INHERITS BACKGROUND COLOR FROM NAVBAR */
+
+/* TODO: Fix dropdown for mobile menu's transparent background */
+div.navbar-header {
+    height: 70px;
+    background-color: #FFFCF7;
+}
+
+/* DIV FOR NAVBAR'S BRAND AND BUTTONS (INLINE-BLOCK ALIGNMENT) */
+
+.navbar--block {
+    display: inline-block;
+}
+
+/* NAVBAR-BRAND FONT SIZE CHANGE */
+
+.navbar-brand {
+    font-size: 24px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    color: rgb(0, 33, 66) !important;
+}
+
+/* ADDS MARGIN TO CENTER NAV LINKS */
+
+a.nav--links {
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+/*button.navbar-toggle.collapsed {
+  margin-top: 15px;
+}*/
+
+/* STYLING FOR NAVBAR BUTTONS' HOVER STATE */
+
+#ourvisionlink:hover, #ourserviceslink:hover, #testimonialslink:hover, #contactslink:hover, #contactslink:active {
+    background-color: #EAEAF9;
+}
+
+/* DROPDOWN MENU WIDTH */
+
+.dropdown-menu {
+    width: 300px;
+}
+
+/* ENABLES DROPDOWN ON HOVER */
+
+@media (min-width: 767px) {
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+}
+
+/* REMOVE LINK STYLING FROM BRAND (EXCEPT FOR ACTIVE STATE) */
+
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+}
+
+
+/* STYLING FOR NAVBAR LINK FONT */
+
+.navbar-nav {
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    /*margin-top: 6px;*/
+}
+
+/* MOVES DROPDOWN ITEMS TO THE RIGHT */
+
+.menu--contacts {
+    margin-left: 20px;
+    padding: 10px 0;
+}
+
+
+/* CHANGING TOOLTIP COLOR */
+
+.tooltip--light-blue + .tooltip > .tooltip-inner {
+  background-color: #d3f4ff;
+}
+
+
+
+                        /*                    */
+                        /*                    */
+                        /*    BANNER STYLING  */
+                        /*                    */
+                        /*                    */
+
+
+
+
+
+                        /*                    */
+                        /*                    */
+                        /*    OUR VISION      */
+                        /*       WELL         */
+                        /*                    */
+                        /*                    */
+
+.container--ourvision {
+  background-color: rgba(232, 244, 255, 0.68);
+  padding: 0;
+}
+
+.well--ourvision {
+    max-width: 450px;
+    background: inherit !important;
+    color: #3F352D;
+    border: none;
+    border-radius: 1.5px;
+    margin: auto;
+    padding: 0 15px;
+    box-shadow: none !important;
+}
+
+/* STYLING FOR OUR VISION HEADER */
+
+h1.ov--header {
+    font-family: 'Oswald', sans-serif;
+    font-size: 42px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 5px;
+    margin: 65px 0 0 0;
+}
+
+/* STYLING FOR OUR VISION CONTENT */
+
+p.ov--content-vision {
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 0.3s ease-in-out;
+}
+
+p.ov--content-vision.is-showing {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+p.ov--content-services {
+  opacity: 0;
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 17px;
+  text-align: center;
+  /*padding-bottom: 25px;*/
+  /*margin-bottom: 60px;*/
+  transform: translateX(-20px);
+  transition: all 0.5s ease-in-out;
+}
+
+p.ov--content-services.is-showing {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+/* OUR VISION HR TAG STYLING */
+
+hr.ov--headline {
+    width: 275px;
+    border: none;
+    border-top: 1.25px solid rgba(255, 147, 40, 0.6);
+    margin: 40px auto;
+}
+
+img.blue-border {
+    border: 3px solid rgb(31, 66, 86);
+}
+
+.ov--img-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 85px;
+}
+
+img.portrait {
+    max-width: 450px;
+}
+
+
+
+
+                          /*                    */
+                          /*                    */
+                          /*    TESTIMONIALS    */
+                          /*        WELL        */
+                          /*                    */
+                          /*                    */
+
+.container--testimonials {
+    background: url('https://res.cloudinary.com/theclosingcut/image/upload/v1495922303/sunset_blue_red_hofrxa.jpg') no-repeat fixed bottom;
+    background-position: center;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.well--testimonials {
+    display: flex;
+    flex-direction: column;
+
+    background: transparent !important;
+    border-radius: 1.5px;
+    margin: 0;
+    color: #FEF0CE;
+    font-family: 'Antic Slab', sans-serif;
+    border: none;
+    box-shadow: none !important;
+    /* text-shadow: 0 0 0.5px rgb(242, 238, 255); */
+}
+
+.well--testimonials > h1 {
+    flex-grow: 0;
+    order: 1;
+
+    font-family: 'Oswald', serif;
+    font-size: 45px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 6px;
+    margin-top: 60px;
+}
+
+.well--testimonials > h4 {
+    flex: 0;
+    order: 3;
+
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+.well--testimonials > h4#relative {
+    flex: 0;
+    order: 7;
+
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.well--testimonials > h5 {
+    flex: 0;
+    order: 6;
+
+    font-weight: 700;
+    font-style: italic;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.well--testimonials > p {
+    flex: 0 60%;
+    order: 4;
+
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+}
+
+/* CUSTOM HR FOR TESTIMONIALS WELL */
+
+hr.hr--testimonials {
+    flex: 0;
+    order: 2;
+
+    width: 100%;
+    border: solid 2px #FEF0CE;
+    /* thins line out enough, otherwise it looks like doubled */
+    border-top: 0;
+    margin: 25px auto;
+}
+
+hr.hr--testimonials#bottom-hr {
+    order: 9;
+    margin: 25px auto 75px auto;
+}
+
+/* STYLING FOR DIVIDER ABOVE 'TESTIMONIALS' */
+
+img.logo2 {
+    margin-top: 25px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1.5s ease-in-out;
+}
+
+img.logo2.is-showing {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+
+                          /*                    */
+                          /*                    */
+                          /*    OUR SERVICES    */
+                          /*        WELL        */
+                          /*                    */
+
+/* STYLING FOR OUR SERVICES CONTAINER */
+
+div.container--ourservices {
+  background-color: rgb(232, 244, 255);
+  padding: 0;
+  border: none;
+}
+
+/* CAROUSEL ROW CODE */
+div.carousel--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+div.carousel--wrapped {
+    max-width: 500px;
+    max-height: 500px;
+    margin: auto;
+}
+
+img.carousel--image:hover {
+
+}
+
+ /* STYLING FOR OUR SERVICES WELL */
+.well--ourservices {
+    background: transparent !important;
+    color: #3F352D;
+    font-family: 'Yantramanav', sans-serif;
+    /*padding: 75px 0 105px 0;*/
+    padding-top: 0;
+    padding-bottom: 0;
+    border: none;
+    border-radius: 1.5px;
+    margin-bottom: 0;
+    box-shadow: none !important;
+}
+
+.well--ourservices > h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 45px;
+    font-weight: 400 !important;
+    letter-spacing: 6px;
+    text-align: center;
+    margin: 45px 0 30px 0;
+}
+
+div#ourservices--carousel {
+    border: 3px solid rgb(31, 66, 86);
+    margin: 25px 0;
+}
+
+div.carousel-caption > h4 {
+    letter-spacing: 0.75px;
+}
+
+.os--flex {
+    display: flex;
+
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.os--description {
+    flex: 2 100%;
+    order: 1;
+
+    width: 220px;
+    margin: 0 auto 10px auto;
+    opacity: 0.85;
+}
+
+.os--description > h2 {
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 38px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.os--description > h3 {
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 0;
+    margin: 5px 0 20px 0;
+}
+
+.os--description > p {
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.os--haircuts {
+    flex: 1 50%;
+    order: 2;
+
+    font-family: 'Yantramanav', sans-serif;
+    text-align: center;
+    width: 220px;  /* min-width = ~180px */
+    padding: 0 20px;
+    margin: 0 auto 20px auto;
+    opacity: 0.85;
+}
+
+.os--haircuts > h4 {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    /*border-bottom: 1px solid #3F352D;*/
+    padding-bottom: 7px;
+    border-bottom: 1px solid rgba(255, 147, 40, 1);
+    margin-bottom: 7px;
+}
+
+.os--haircuts > p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.os--shaves {
+    flex: 1 50%;
+    order: 2;
+
+    font-family: 'Yantramanav', sans-serif;
+    text-align: center;
+    width: 220px;  /* min-width = ~180px */
+    padding: 0 20px;
+    margin: 0 auto 20px auto;
+    opacity: 0.85;
+}
+
+.os--shaves > h4 {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid rgba(255, 147, 40, 1);
+    margin-bottom: 7px;
+}
+
+.os--shaves > p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.os--notification {
+    flex-grow: 100%;
+    order: 3;
+
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+div.os--notification > p {
+    width: 240px;
+}
+
+hr.os--headline {
+    width: 100%;
+    border: none;
+    border-top: 1.25px solid rgba(255, 147, 40, 0.6);
+    margin: 0 20px 30px 20px;
+}
+
+hr.os--over-carousel {
+    width: 275px;
+    border: none;
+    border-top: 1.25px solid rgba(255, 147, 40, 0.6);
+    margin: 10px auto 15px auto;
+}
+hr.os--under-carousel {
+    width: 275px;
+    border: none;
+    border-top: 1.25px solid rgba(255, 147, 40, 0.6);
+    margin: 15px auto 45px auto;
+}
+
+
+                          /*                    */
+                          /*                    */
+                          /*    CONTACTS WELL   */
+                          /*                    */
+                          /*                    */
+
+div.container--contact {
+    padding: 0;
+    margin: 0;
+}
+.well--contacts {
+    min-width: 440px;
+    background: rgba(234, 247, 255, 0.6) !important;
+    color: #03264c;
+    letter-spacing: 1px;
+    padding-bottom: 0;
+    border-radius: 1.5px;
+    margin: 60px 0;
+}
+
+.well--contacts > h1 {
+    font-family: 'Oswald', serif;
+    font-size: 42px;
+    font-weight: 400;
+    letter-spacing: 6px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* WRAPPER FOR CONTACTS' TEXT */
+
+.contacts--text-wrapper {
+  text-align: center;
+  margin: 15px 0;
+}
+
+/* CONTACTS TEXT */
+
+.contacts-text {
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 17px;
+  text-align: center;
+  /* text-align: left; */
+  letter-spacing: 2px;
+}
+
+form.form-style {
+  font-family: 'Yantramanav', sans-serif;
+}
+
+/* CONTACTS SUBMIT BUTTON STYLING */
+
+.submit--button-wrapper {
+    text-align: center;
+    margin: 40px;
+}
+
+.submit--button {
+  background-color: #125D96;
+  color: white;
+  font-family: 'Yantramanav', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 2px;
+  padding: 15px 65px;
+  border-radius: 1.5px;
+  text-shadow: 0 0 1px #000;
+  box-shadow: 0 4px 1px 1px #063568;
+}
+
+.submit--button:hover {
+  color: white;
+}
+
+.submit--button:active {
+  color: white;
+  box-shadow: 0 2px 1px 1px #063568;
+  transform: translateY(3px);
+}
+
+div#no-margin {
+    margin: 0;
+}
+
+/* CONTACTS HR TAG STYLING */
+
+.hr--contacts {
+  width: 200px;
+  border: solid 1px rgba(255, 147, 40, 0.5);
+  /* thins line out enough, otherwise it looks like doubled */
+  border-top: 0;
+  margin: 30px auto;
+}
+
+
+                            /*                    */
+                            /*                    */
+                            /*       MEDIA        */
+                            /*      QUERIES       */
+                            /*                    */
+                            /*                    */
+
+@media screen and (max-width: 500px) {
+
+    div.navbar-logo {
+        display: none;
+    }
+
+    div.small-navbar-logo {
+        display: inline-block;
+        width: 45px;
+        vertical-align: middle;
+        padding: 0;
+        margin: 12px 0;
+    }
+
+    img.portrait {
+        max-width: 100%;
+    }
+
+    .ov--header {
+        font-size: 30px;
+    }
+
+    hr.ov--headline {
+        width: 150px;
+    }
+
+    img#ov--img {
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    p.ov--content-vision {
+        font-size: 19px;
+        margin-bottom: 30px;
+    }
+
+  p.ov--content-services {
+      margin: 10px 0;
+      font-size: 17px;
+  }
+
+  h4.services--headers {
+      font-size: 20px;
+  }
+
+  p.services--text {
+      font-size: 16px;
+  }
+
+  /* ADJUSTS 'LOGO2' SIZE */
+  .divider--darkgrey-big {
+
+  }
+
+  .well--testimonials > h1 {
+    font-size: 30px;
+  }
+
+  .well--testimonials > h4 {
+    font-size: 19px;
+  }
+
+  .well--testimonials > h5 {
+    font-size: 17px;
+  }
+
+  .well--ourservices > h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .os--description > h2 {
+      font-size: 24px;
+  }
+
+  .os--description > h3 {
+      font-size: 20px;
+  }
+
+  .os--haircuts > h4 {
+      font-size: 20px;
+  }
+
+  .os--haircuts > p {
+      font-size: 17px;
+  }
+
+  .os--shaves > h4 {
+      font-size: 20px;
+  }
+
+  .os--shaves > p {
+      font-size: 17px;
+  }
+
+  .os--notification {
+      font-size: 13px;
+  }
+
+  .carousel--row {
+      width: 100%;
+  }
+
+  /* REMOVES COL PADDING FOR CONTAINERS WITH IMAGES/TEXT */
+
+  div.col-lg-4.col-lg-offset-4.col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2.col-xs-12 {
+      padding-left: 0;
+      padding-right: 0;
+  }
+
+  div.col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1.col-sm-12.col-xs-12 {
+      padding-left: 0;
+      padding-right: 0;
+  }
+
+  /* RESIZING 'OUR SERVICES' IMAGE */
+
+  div.col-lg-6.col-lg-offset-3.col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2.col-xs-12 {
+      padding-left: 0;
+      padding-right: 0;
+  }
+
+  /* REMOVES COL PADDING IN 'COUNSELLING' */
+
+  div.col-lg-6.col-lg-offset-3.col-md-8.col-md-offset-2.col-sm-8.col-sm-offset-2.col-xs-12 {
+      padding-left: 0;
+      padding-right: 0;
+  }
+
+  div.well--contacts {
+      min-width: 300px;
+  }
+
+  div.well--contacts > h1 {
+      font-size: 30px;
+  }
+
+  div.submit--button-wrapper {
+      margin: 20px 0;
+  }
+
+  div.counsel--services {
+      max-width: 100%;
+      padding: 0;
+  }
+
+  div.counsel--img {
+      max-width: 100%;
+      padding: 0;
+  }
+
+  div.container--sitemap {
+      height: 960px !important;
+  }
+
+  div.sitemap--wrapper {
+      display: none;
+  }
+
+  div.sitemap--wrapper-small {
+      display: block !important;
+      width: 320px;
+      height: 600px;
+      margin: 40px auto;
+  }
+
+}
+
+
+                            /*                    */
+                            /*                    */
+                            /*     COUNSELLING    */
+                            /*       TRIGGER      */
+                            /*      CONTAINER     */
+                            /*                    */
+                            /*                    */
+
+div.container--trigger {
+    background-color: #CEFFDD;
+    height: 100px;
+    font-family: 'Yantramanav', sans-serif;
+    border-top: 2px solid rgba(16, 64, 102, 0.8);
+}
+
+div.trigger--flex {
+    display: flex;
+
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    color: rgba(16, 64, 102, 0.825);
+    margin-top: 14px;
+}
+
+h4.trigger--link {
+    flex-grow: 1;
+    order: 1;
+    text-align: center;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    margin: 9px 0;
+    opacity: 0.825;
+}
+
+h3.trigger--link {
+    flex-grow: 1;
+    order: 2;
+    text-align: center;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 18px;
+    opacity: 0.825;
+    margin: 0;
+}
+
+h3.trigger--link:hover {
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+                            /*                    */
+                            /*                    */
+                            /*     COUNSELLING    */
+                            /*      CONTAINER     */
+                            /*                    */
+                            /*                    */
+
+div.container--counsel {
+    background-color: #E7E7E7;
+    box-shadow: inset 1px 7px 22px -2px rgba(0,0,0,0.35);
+}
+
+/* CODE FOR CONTAINER COLLAPSE/EXPAND */
+
+div.container--counsel-close {
+    height: 0;
+
+    transition-property: height;
+    transition-duration: 3s;
+    transition-timing-function: ease-out;
+}
+
+div.counsel--flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-flow: row wrap;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+div.counsel--img {
+    order: 1;
+    text-align: center;
+}
+
+.green-border {
+    border: 0.5px solid #7AFFA4;
+}
+
+div.counsel--services {
+    /* Flex code */
+    order: 2;
+    max-width: 400px;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 17px;
+    padding: 20px 30px;
+}
+
+div.counsel--services > h4 {
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-bottom: 7px;
+    border-bottom: 1.25px solid #7AFFA4;
+    margin-bottom: 20px;
+}
+
+div.counsel--services > p {
+    margin: 10px 0;
+}
+
+div.counsel--services > p.contact {
+    padding-top: 10px;
+    border-top: 1px solid #7AFFA4;
+    margin-top: 20px;
+}
+
+div.counsel--services > p > i {
+    margin-right: 3px;
+}
+
+
+/*CROSSHAIR BACKGROUND COLOR TOOL - CHANGES BG TO PINK WHILE WORKING ON AREA*/
+
+.crosshair {
+  background-color: pink;
+}
+
+/* BUTTON STYLING TO REMOVE HIGHLIGHT ON CLICK */
+
+button {
+  outline: none !important;
+}
+
+/* UNDERLINE CODE, SIMPLY ADDS BOTTOM BORDER */
+
+.underline {
+    padding-bottom: 10px;
+    border-bottom: 0.5px solid inherit;
+}
+
+
+
+                          /*                    */
+                          /*                    */
+                          /*    FOOTER STYLING  */
+                          /*                    */
+                          /*                    */
+
+
+.footer {
+    background-color: #545454;
+    text-align: center;
+    /*Set the fixed height of the footer here.*/
+    height: 120px;
+    width: 100%;
+    bottom: 0;
+    padding: 15px 0;
+}
+
+p.footer--text {
+    color: white;
+    font-family: 'Yantramanav', sans-serif;
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin: 5px 0;
+}
+
+a.footer--link {
+    color: white;
+}
+
+a.footer--link:hover {
+    color: rgb(255, 192, 150);
+    letter-spacing: 0.5px;
+    border-bottom: 0.5px solid rgb(255, 192, 150);
+}
+
+                            /*                    */                            /*                    */
+                            /*       SITEMAP      */
+                            /*                    */
+                            /*                    */
+
+div.container--sitemap {
+    height: 1860px;
+    background: #FFF8EA;
+}
+
+div.container--sitemap-close {
+    height: 0;
+
+    transition-property: height;
+    transition-duration: 3s;
+    transition-timing-function: ease-out;
+}
+
+div.sitemap--wrapper {
+    width: 600px;
+    margin: 100px auto;
+}
+
+div.sitemap--wrapper-small {
+    display: none;
+}
+
+div.sitemap--text-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+p.sitemap--text {
+    padding-bottom: 60px;
+    margin: auto;
+    text-align: center;
+    color: rgb(0, 33, 66);
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 500;
+}
+
+
+                          /*                    */
+                          /*  DIVIDER CONTAINER */
+                          /*      BANNER TO     */
+                          /*    'OUR VISION'    */
+                          /*                    */
+
+.divider--darkblue {
+  background: rgb(2, 25, 51);
+  height: 240px;
+}
+
+.divider--darkblue-thin {
+  background: rgb(2, 25, 51);
+  height: 3px;
+}
+
+.divider--aquablue {
+  background: rgba(10, 41, 66, 0.8);
+  height: 6px;
+}
+
+.divider--darkgrey-big {
+  background: rgba(17, 23, 29, 0.9);
+  height: 250px;
+  margin: 0;
+}
+
+.divider--lightblue {
+  background: rgba(232, 244, 255, 0.68);
+  height: 6px;
+}
+
+.divider--orange {
+  background: rgba(255, 147, 76, 0.9);
+  height: 50px;
+}
+
+.divider--darkgrey {
+  background: rgb(31, 42, 53);
+  height: 35px;
+}
+
+
+                            /*                    */
+                            /*  DIVIDER CONTAINER */
+                            /*      BANNER TO     */
+                            /*    'OUR VISION'    */
+                            /*                    */
+
+.bounce {
+    display: inline-block;
+    position: relative;
+    -moz-animation: bounce 0.85s infinite linear;
+    -o-animation: bounce 0.85s infinite linear;
+    -webkit-animation: bounce 0.85s infinite linear;
+    animation: bounce 0.85s infinite linear;
+
+}
+
+@-webkit-keyframes bounce {
+    0% { top: 0px; }
+    20% { top: -2px; }
+    30% { top: -3px; }
+    40% { top: -2px; }
+    50% { top: 0px; }
+    60% { top: 2px; }
+    70% { top: 3px; }
+    80% { top: 2px; }
+    100% { top: 0px; }
+}
+
+@-moz-keyframes bounce {
+    0% { top: 0px; }
+    20% { top: -2px; }
+    30% { top: -3px; }
+    40% { top: -2px; }
+    50% { top: 0px; }
+    60% { top: 2px; }
+    70% { top: 3px; }
+    80% { top: 2px; }
+    100% { top: 0px; }
+}
+
+@-o-keyframes bounce {
+    0% { top: 0px; }
+    20% { top: -2px; }
+    30% { top: -3px; }
+    40% { top: -2px; }
+    50% { top: 0px; }
+    60% { top: 2px; }
+    70% { top: 3px; }
+    80% { top: 2px; }
+    100% { top: 0px; }
+}
+
+@-ms-keyframes bounce {
+    0% { top: 0px; }
+    20% { top: -2px; }
+    30% { top: -3px; }
+    40% { top: -2px; }
+    50% { top: 0px; }
+    60% { top: 2px; }
+    70% { top: 3px; }
+    80% { top: 2px; }
+    100% { top: 0px; }
+}
+
+@keyframes bounce {
+    0% { top: 0px; }
+    20% { top: -2px; }
+    30% { top: -3px; }
+    40% { top: -2px; }
+    50% { top: 0px; }
+    60% { top: 2px; }
+    70% { top: 3px; }
+    80% { top: 2px; }
+    100% { top: 0px; }
+}
+
+
+
+
+
+/*      ERROR PAGE CSS CODE     */
+/*      ERROR PAGE CSS CODE     */
+/*      ERROR PAGE CSS CODE     */
+/*      ERROR PAGE CSS CODE     */
+/*      ERROR PAGE CSS CODE     */
+/*      ERROR PAGE CSS CODE     */
+/*      ERROR PAGE CSS CODE     */
+
+div.error-box {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #0089a8;
+}

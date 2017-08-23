@@ -1,0 +1,209 @@
+
+/* ADDS BLUR AFTER LANDING SEQUENCE */
+
+/* CONTAINER BACKGROUND IS MADE TRANSPARENT HERE */
+
+/* REMOVE DEFAULT WELL BORDER */
+
+/*REMOVES SPACE ON SIDE OF SCREEN*/
+
+/* REMOVES DIVIDER SPACING ISSUE - DIVIDER DOESN'T FIT SCREEN, TOO NARROW */
+
+                      /*                    */
+                      /*                    */
+                      /*  LANDING SEQUENCE  */
+                      /*                    */
+                      /*                    */
+
+                      /*                    */
+                      /*                    */
+                      /* NAVBAR STARTS HERE */
+                      /*                    */
+                      /*                    */
+
+/* NAVBAR FADE IN ATTEMPT# 4999 */
+/* TODO: fix navbar so that it doesn't slide up when you scroll on small devices ( fine on larger screens ). */
+
+/* REMOVING PADDING ON RIGHT SIDE OF COLLAPSED NAVBAR BUTTONS */
+
+/* INHERITS BACKGROUND COLOR FROM NAVBAR */
+
+/* TODO: Fix dropdown for mobile menu's transparent background */
+
+/* DIV FOR NAVBAR'S BRAND AND BUTTONS (INLINE-BLOCK ALIGNMENT) */
+
+/* NAVBAR-BRAND FONT SIZE CHANGE */
+
+/* ADDS MARGIN TO CENTER NAV LINKS */
+
+/*button.navbar-toggle.collapsed {
+  margin-top: 15px;
+}*/
+
+/* STYLING FOR NAVBAR BUTTONS' HOVER STATE */
+
+/* DROPDOWN MENU WIDTH */
+
+/* ENABLES DROPDOWN ON HOVER */
+
+/* REMOVE LINK STYLING FROM BRAND (EXCEPT FOR ACTIVE STATE) */
+
+
+/* STYLING FOR NAVBAR LINK FONT */
+
+/* MOVES DROPDOWN ITEMS TO THE RIGHT */
+
+
+/* CHANGING TOOLTIP COLOR */
+
+
+
+                        /*                    */
+                        /*                    */
+                        /*    BANNER STYLING  */
+                        /*                    */
+                        /*                    */
+
+
+
+
+
+                        /*                    */
+                        /*                    */
+                        /*    OUR VISION      */
+                        /*       WELL         */
+                        /*                    */
+                        /*                    */
+
+/* STYLING FOR OUR VISION HEADER */
+
+/* STYLING FOR OUR VISION CONTENT */
+
+/* OUR VISION HR TAG STYLING */
+
+
+
+
+                          /*                    */
+                          /*                    */
+                          /*    TESTIMONIALS    */
+                          /*        WELL        */
+                          /*                    */
+                          /*                    */
+
+/* CUSTOM HR FOR TESTIMONIALS WELL */
+
+/* STYLING FOR DIVIDER ABOVE 'TESTIMONIALS' */
+
+
+                          /*                    */
+                          /*                    */
+                          /*    OUR SERVICES    */
+                          /*        WELL        */
+                          /*                    */
+
+/* STYLING FOR OUR SERVICES CONTAINER */
+
+/* CAROUSEL ROW CODE */
+
+ /* STYLING FOR OUR SERVICES WELL */
+
+
+                          /*                    */
+                          /*                    */
+                          /*    CONTACTS WELL   */
+                          /*                    */
+                          /*                    */
+
+/* WRAPPER FOR CONTACTS' TEXT */
+
+/* CONTACTS TEXT */
+
+/* CONTACTS SUBMIT BUTTON STYLING */
+
+/* CONTACTS HR TAG STYLING */
+
+
+                            /*                    */
+                            /*                    */
+                            /*       MEDIA        */
+                            /*      QUERIES       */
+                            /*                    */
+                            /*                    */
+
+@media screen and (max-width: 500px) {
+
+  /* ADJUSTS 'LOGO2' SIZE */
+
+  /* REMOVES COL PADDING FOR CONTAINERS WITH IMAGES/TEXT */
+
+  /* RESIZING 'OUR SERVICES' IMAGE */
+
+  /* REMOVES COL PADDING IN 'COUNSELLING' */
+
+}
+
+
+                            /*                    */
+                            /*                    */
+                            /*     COUNSELLING    */
+                            /*       TRIGGER      */
+                            /*      CONTAINER     */
+                            /*                    */
+                            /*                    */
+
+
+                            /*                    */
+                            /*                    */
+                            /*     COUNSELLING    */
+                            /*      CONTAINER     */
+                            /*                    */
+                            /*                    */
+
+/* CODE FOR CONTAINER COLLAPSE/EXPAND */
+
+
+/*CROSSHAIR BACKGROUND COLOR TOOL - CHANGES BG TO PINK WHILE WORKING ON AREA*/
+
+/* BUTTON STYLING TO REMOVE HIGHLIGHT ON CLICK */
+
+/* UNDERLINE CODE, SIMPLY ADDS BOTTOM BORDER */
+
+
+
+                          /*                    */
+                          /*                    */
+                          /*    FOOTER STYLING  */
+                          /*                    */
+                          /*                    */
+
+                            /*                    */                            /*                    */
+                            /*       SITEMAP      */
+                            /*                    */
+                            /*                    */
+
+
+                          /*                    */
+                          /*  DIVIDER CONTAINER */
+                          /*      BANNER TO     */
+                          /*    'OUR VISION'    */
+                          /*                    */
+
+
+                            /*                    */
+                            /*  DIVIDER CONTAINER */
+                            /*      BANNER TO     */
+                            /*    'OUR VISION'    */
+                            /*                    */
+
+
+
+
+
+/*      ERROR PAGE CSS CODE     */
+/*      ERROR PAGE CSS CODE     */
+/*      ERROR PAGE CSS CODE     */
+/*      ERROR PAGE CSS CODE     */
+/*      ERROR PAGE CSS CODE     */
+/*      ERROR PAGE CSS CODE     */
+/*      ERROR PAGE CSS CODE     */

@@ -3,11 +3,14 @@ var gulp = require('gulp'),
     postcss = require('gulp-postcss'),
     autoprefixer = require('autoprefixer'),
     cssnano = require('cssnano'),
+    criticalCss = require('gulp-critical-css');
     jshint = require('gulp-jshint'),
     uglify = require('gulp-uglify'),
     imagemin = require('gulp-imagemin'),
+    imageminOptipng = require('imagemin-optipng');
     rename = require('gulp-rename'),
     concat = require('gulp-concat'),
+    insert = require('gulp-insert'),
     notify = require('gulp-notify'),
     cache = require('gulp-cache'),
     livereload = require('gulp-livereload'),
@@ -28,8 +31,6 @@ gulp.task('js', function() {
     return gulp.src('./src/js/*.js')
         .pipe(jshint())
         .pipe(jshint.reporter('default'))
-        // .pipe(gulp.dest('tcc-site/build/'))  COMMENTED OUT TO CHECK FOR LACK OF COMPRESSED .JS AFTER GULP
-        .pipe(rename({suffix: '.min'}))
         .pipe(uglify())
         .pipe(gulp.dest('./build/js/'))
         .pipe(notify({ message: '.js tasks are complete.' }));
@@ -61,12 +62,24 @@ gulp.task('css', function() {
         .pipe(gulp.dest('./build/css/'));
 });
 
+gulp.task('critical', () => {
+    gulp.src('src/css/*.css')
+        .pipe(criticalCss())
+        .pipe(gulp.dest('build/css/'))
+        .pipe(insert.append('-critical'));
+});
+
 // IMAGES
+// gulp.task('images', function() {
+//     return gulp.src('./src/images/*.png')
+//         .pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
+//         .pipe(gulp.dest('./build/images/'))
+//         .pipe(notify({ message: 'Images task complete.' }));
+// });
 gulp.task('images', function() {
     return gulp.src('./src/images/*.png')
-        .pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
-        .pipe(gulp.dest('./build/images/'))
-        .pipe(notify({ message: 'Images task complete.' }));
+        .pipe(imagemin([imageminOptipng()]))
+        .pipe(gulp.dest('build/images'))
 });
 
 // SITEMAP
@@ -87,7 +100,7 @@ gulp.task('clean', function() {
 
 // DEFAULT
 gulp.task('default', ['clean'], function() {
-    gulp.start('css', 'js', 'html', 'php', 'images', 'sitemap');
+    gulp.start('css', 'critical', 'js', 'html', 'php', 'images', 'sitemap');
 });
 
 // WATCH

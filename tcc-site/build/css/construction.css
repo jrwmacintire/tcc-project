@@ -1,25 +1,21 @@
 
 html {
     font-size: 1em;
+    background: url("../images/sunset-blue-red.png") no-repeat center center fixed;
     padding: 0;
     margin: 0;
 }
 
-@media only screen and (min-width : 320px) and (max-width : 480px) {
-    html {  background-color: #002b59;  }
-}
-
-/* Main content area */
 div.content {
-    /* Flexbox */
+     /*Flexbox */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* Size */
+     /*Size */
     /*height: 30em;
     width: 40em;*/
-    /* Positioning */
+     /*Positioning */
     position: absolute;
     top: 0;
     bottom: 0;
@@ -27,11 +23,18 @@ div.content {
     right: 0;
     padding: 2em 1em;
     margin: auto;
-    /* Text */
+     /*Text */
     font-family: "News Cycle", sans-serif;
     color: #FEF0CE;
     letter-spacing: 0.07em;
 }
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+    html {  background-color: #002b59;  }
+}
+
+/* Main content area */
+
 
 /* Sections within 'content' */
 div.logo {
@@ -50,7 +53,7 @@ div.description {
     /*width: 600px;*/
     /* Positioning */
     /* Font */
-    font-size: 0.72em;
+    font-size: 0.78em;
     text-align: center;
 }
 
@@ -60,16 +63,19 @@ div.message {
     /* Font */
     font-size: 1.25em;
     font-weight: 500;
+    letter-spacing: 1px;
     text-align: center;
 }
 
 div.contacts {
     /* Positioning */
-    margin: 1.85em;
+    padding: 1.23rem;
+    border: 1px solid #ff934c;
+    margin: 2.22rem;
     /* Flexbox */
     display: flex;
     flex-direction: column;
-    font-size: 0.8em;
+    font-size: 0.87em;
     text-align: center;
 }
 
