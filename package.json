@@ -31,7 +31,9 @@
     "critical": "^0.9.0",
     "gulp-critical-css": "^1.0.1",
     "gulp-sitemap": "^4.2.0",
-    "gulp-size": "^2.1.0"
+    "gulp-size": "^2.1.0",
+    "gulp-util": "^3.0.8",
+    "gutil": "^1.6.4"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

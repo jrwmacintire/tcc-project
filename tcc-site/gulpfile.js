@@ -3,11 +3,12 @@ var gulp = require('gulp'),
     postcss = require('gulp-postcss'),
     autoprefixer = require('autoprefixer'),
     cssnano = require('cssnano'),
-    criticalCss = require('gulp-critical-css');
+    critical = require('critical').stream,
+    criticalCss = require('gulp-critical-css'),
     jshint = require('gulp-jshint'),
     uglify = require('gulp-uglify'),
     imagemin = require('gulp-imagemin'),
-    imageminOptipng = require('imagemin-optipng');
+    imageminOptipng = require('imagemin-optipng'),
     rename = require('gulp-rename'),
     concat = require('gulp-concat'),
     insert = require('gulp-insert'),
@@ -15,16 +16,8 @@ var gulp = require('gulp'),
     cache = require('gulp-cache'),
     livereload = require('gulp-livereload'),
     sitemap = require('gulp-sitemap'),
-    del = require('del');
-
-// var supported = [
-//     'last 2 versions',
-//     'safari >= 8',
-//     'ie >= 10',
-//     'ff >= 20',
-//     'ios 6',
-//     'android 4'
-// ];
+    del = require('del'),
+    gutil = require('gulp-util');
 
 // JAVASCRIPT TASK
 gulp.task('js', function() {
@@ -62,20 +55,19 @@ gulp.task('css', function() {
         .pipe(gulp.dest('./build/css/'));
 });
 
-gulp.task('critical', () => {
-    gulp.src('src/css/*.css')
-        .pipe(criticalCss())
-        .pipe(gulp.dest('build/css/'))
-        .pipe(insert.append('-critical'));
+// Generate & Inline Critical-path CSS
+gulp.task('critical', function() {
+    return gulp.src('build/*.html')
+        .pipe(critical({
+            inline: true,
+            base: 'build/',
+            css: ['build/css/construction.css'],
+            minify: true
+        }))
+        .on('error', function(err) {gutil.log(gutil.colors.red(err.message)); })
+        .pipe(gulp.dest('build/'));
 });
 
-// IMAGES
-// gulp.task('images', function() {
-//     return gulp.src('./src/images/*.png')
-//         .pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
-//         .pipe(gulp.dest('./build/images/'))
-//         .pipe(notify({ message: 'Images task complete.' }));
-// });
 gulp.task('images', function() {
     return gulp.src('./src/images/*.png')
         .pipe(imagemin([imageminOptipng()]))
@@ -100,32 +92,5 @@ gulp.task('clean', function() {
 
 // DEFAULT
 gulp.task('default', ['clean'], function() {
-    gulp.start('css', 'critical', 'js', 'html', 'php', 'images', 'sitemap');
-});
-
-// WATCH
-gulp.task('watch', function() {
-    // Watch .html files
-    gulp.watch('./src/*.html', ['html']);
-
-    // Watch .css files
-    gulp.watch('./src/css/*.css', ['css']);
-
-    // Watch .js files
-    gulp.watch('./src/js/*.js', ['js']);
-
-    // Watch .php files
-    gulp.watch('./src/php/*.php', ['php']);
-
-    // Watch images files
-    gulp.watch('./src/images/*', ['images']);
-})
-
-// LiveReload WATCHER
-gulp.task('watch', function() {
-    // Create LiveReload server
-    livereload.listen();
-
-    // Watch any files in prod/, reload on change
-    gulp.watch(['./build/**/*']).on('change', livereload.changed);
+    gulp.start('css', 'js', 'html', 'php', 'images', 'sitemap');
 });
