@@ -33,6 +33,7 @@ function landingSequence() {
 } setTimeout(landingSequence, 1600);
 
 // 'OUR VISION' CONTENT SCROLLS IN FROM LEFT
+
 function addVision() {
     $(".ov--content-vision").addClass('is-showing');
 } setTimeout(addVision, 3200);

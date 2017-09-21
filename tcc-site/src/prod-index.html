@@ -6,7 +6,9 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- The above three 'meta' tags must come before anything else in 'head' tag. Keep 'title' after these 'meta's. -->
-		<meta name="google-site-verification" content="VPGTZsZcaBTeXKY79u9srEWvIhDNqNBgwX9P3ePoi00"/>
+		<meta name="google-site-verification" content="VPGTZsZcaBTeXKY79u9srEWvIhDNqNBgwX9P3ePoi00">
+		<meta name="author" content="John MacIntire">
+
 		<title>
 			The Closing Cut
 		</title>
@@ -133,7 +135,7 @@
 
 		<!-- LOGO BANNER CONTAINER  -->
 		<div class="container">
-			<img class="img-responsive center-block" src="./images/transparent-darkgreen-big-logo.png">
+			<img class="img-responsive center-block" src="./images/transparent-darkgreen-big-logo.png" alt="Large TCC Banner Logo">
 		</div>
 
 
@@ -185,17 +187,16 @@
 				<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
 					<div class="well well--ourvision">
 						<p class="ov--content-vision">
-							The Closing Cut aims to provide support to you and your loved ones during this difficult time.
+							The Closing Cut Desairology partners
+							<br>
+							with families and funeral homes
+							<br>
+							seeking a high degree of focus on
+							<br>
+							men's desairology.
 						</p>
 						<p class="ov--content-services">
-							Our services include professional cuts and facial grooming to ensure your loved one is remembered with honor and dignity.
-						</p>
-						<p class="ov--content-services">
-							We partner with families and funeral homes  seeking a high degree of focus on men's desairology
-							<br> -
-							<span class="underline">
-								we are here to serve.
-							</span>
+							Our services include haircuts and facial grooming, ensuring your loved one is remembered with honor and dignity.
 						</p>
 						<hr class="ov--headline"></hr>
 					</div>
@@ -452,7 +453,7 @@
 								<span>
 									Telephone
 								</span>
-								: 520-326-8988
+								: 520-955-3276
 							</p>
 							<p class="contacts-text">
 								<i class="fa fa-fax icon--bump"></i>
@@ -466,12 +467,24 @@
 						<!-- EMAIL FORM STARTS HERE -->
 						<div class="row">
 							<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
-								<form class="form-style" action="http://www.theclosingcut.com/php/mail_handler.php" method="POST" role="form">
-									<!-- FORM FIELDS START HERE -->
+								<!-- Script to handle serializing form data into JSON for POSTing to AWS API. -->
+								<script>
+									jQuery(document).ready(function($) {
+										$('[data-customer-form]').on('submit', function(e) {
+											e.preventDefault();
+											var json = $(this).formToJson({pretty: true, delimiter: '.'});
+											console.log(json);
+										});
+									});
+								</script>
+								<!-- Beginning of form. -->
+								<form class="form-style" action="/rest/contact" method="POST" role="form" data-customer-form>
+									<!-- Name -->
 									<div class="form-group">
 										<label class="sr-only">Full Name</label>
 										<input type="text" name="name" class="form-control" id="inputName" placeholder="Enter full name here.">
 									</div>
+									<!-- Email -->
 									<div class="form-group">
 										<label class="sr-only">Email Address</label>
 										<input type="text" name="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
@@ -479,15 +492,17 @@
 											We'll use this email address to respond promptly.
 										</small>
 									</div>
+									<!-- Phone number -->
 									<div class="form-group">
 										<label class="sr-only">Phone Number</label>
 										<input type="text" name="phone" class="form-control" id="inputPhone" aria-describedby="phoneHelp" placeholder="Enter phone number here.">
 									</div>
+									<!-- Message -->
 									<div class="form-group">
 										<label class="sr-only">Message</label>
 										<textarea type="text" name="message" class="form-control" id="inputText" rows="6" placeholder="Enter message here..."></textarea>
 									</div>
-									<!-- SUBMIT BUTTON START -->
+									<!-- Submit button for form -->
 									<div id="no-margin" class="form-group">
 										<div class="submit--button-wrapper">
 											<button type="submit" name="submit" class="btn submit--button">
@@ -628,6 +643,8 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 		<!-- Custom JavaScript -->
 		<script type="text/javascript" src="./js/tcc.js"></script>
+		<!-- Processes form data into JSON - script courtesy of David Maple -->
+		<script type="text/javascript" src="./js/jquery-form2json.js"></script>
 		<!-- Font Awesome Script -->
 		<script src="https://use.fontawesome.com/a2d1026887.js"></script>
 	</body>

@@ -1,3 +1,8 @@
+var name = "";
+var email = "";
+var phone = "";
+var message = "";
+
 $.ajax({
     url: "/rest/contact/",
     type: "POST",
@@ -17,7 +22,7 @@ $.ajax({
         }
         // process success message
     },
-    error: function (msg) {
+    error: function () {
         // process errors
     }
 });

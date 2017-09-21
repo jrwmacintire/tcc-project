@@ -4,7 +4,7 @@ var gulp = require('gulp'),
     autoprefixer = require('autoprefixer'),
     cssnano = require('cssnano'),
     critical = require('critical').stream,
-    criticalCss = require('gulp-critical-css'),
+    // criticalCss = require('gulp-critical-css'),
     jshint = require('gulp-jshint'),
     uglify = require('gulp-uglify'),
     imagemin = require('gulp-imagemin'),
@@ -25,23 +25,23 @@ gulp.task('js', function() {
         .pipe(jshint())
         .pipe(jshint.reporter('default'))
         .pipe(uglify())
-        .pipe(gulp.dest('./build/js/'))
-        .pipe(notify({ message: '.js tasks are complete.' }));
+        .pipe(gulp.dest('./build/js/'));
+        // .pipe(notify({ message: '.js tasks are complete.' }));
 });
 
 // MOVE HTML FILE, NO MINIFICATION OR COMPRESSION
 gulp.task('html', [], function() {
     gulp.src("./src/*.html")
         .pipe(htmlclean())
-        .pipe(gulp.dest('./build/'))
-        .pipe(notify({ message: '.html task complete.'}));
+        .pipe(gulp.dest('./build/'));
+        // .pipe(notify({ message: '.html task complete.'}));
 });
 
 // MOVE PHP FILE, NO MINIFICATION OR COMPRESSION
 gulp.task('php', [], function() {
     gulp.src("./src/php/*.php")
-        .pipe(gulp.dest('./build/php/'))
-        .pipe(notify({ message: '.php task is complete. '}));
+        .pipe(gulp.dest('./build/php/'));
+        // .pipe(notify({ message: '.php task is complete. '}));
 });
 
 // STYLES
