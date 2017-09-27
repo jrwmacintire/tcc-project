@@ -19,19 +19,6 @@ function fade() {
   $('.navbar').fadeIn(2000);
 } fade();
 
-// LANDING SEQUENCE AT INITIAL SITE visited
-function landingSequence() {
-    var top = document.querySelector("div.trans-top");
-    var bot = document.querySelector("div.trans-bot");
-
-    if(top) {
-        top.className = "top-trigger";
-    }
-    if(bot) {
-        bot.className = "bot-trigger";
-    }
-} setTimeout(landingSequence, 1600);
-
 // 'OUR VISION' CONTENT SCROLLS IN FROM LEFT
 
 function addVision() {
@@ -51,11 +38,6 @@ $(window).scroll(function() {
   }
 });
 
-//
-$('form-style').on('submit', function(e) {
-    // Prevent event from reloading site.
-});
-
 $('.carousel--image').mouseenter(function() {
     $('.fade-text').animate({
         opacity: 0
@@ -65,3 +47,6 @@ $('.carousel--image').mouseenter(function() {
         opacity: 1
     }, 500);
 });
+
+// Form processing with jQuery, AJAX, and vanilla JS.
+$('')

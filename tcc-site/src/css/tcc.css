@@ -1,23 +1,20 @@
 
 html {
-  background: url("../images/bg-orange-sky.png") no-repeat center center fixed;
-  background-size: cover;
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 /* ADDS BLUR AFTER LANDING SEQUENCE */
 
 .addBlur {
-  filter: blur(5px);
+    filter: blur(5px);
 }
 
 /* CONTAINER BACKGROUND IS MADE TRANSPARENT HERE */
 
 body {
-  background-color: transparent !important;
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 /* REMOVE DEFAULT WELL BORDER */
@@ -38,46 +35,9 @@ body {
 
                       /*                    */
                       /*                    */
-                      /*  LANDING SEQUENCE  */
-                      /*                    */
-                      /*                    */
-
-
-.trans-top {
-    background-color: transparent;
-    height: 245px;
-    padding-top: 70px;
-}
-
-.trans-bot {
-    background-color: transparent;
-    height: 410px;
-}
-
-.top-trigger {
-    height: 95px;
-    padding-top: 70px;
-    /*margin-top: 50px;*/
-    transition-property: height;
-    transition-duration: 3s;
-    transition-timing-function: ease-out;
-}
-
-.bot-trigger {
-    height: 35px;
-    transition-property: height;
-    transition-duration: 3s;
-    transition-timing-function: ease-out;
-}
-
-                      /*                    */
-                      /*                    */
                       /* NAVBAR STARTS HERE */
                       /*                    */
                       /*                    */
-
-/* NAVBAR FADE IN ATTEMPT# 4999 */
-/* TODO: fix navbar so that it doesn't slide up when you scroll on small devices ( fine on larger screens ). */
 
 div.container--nav {
     background-color: rgb(255, 252, 247);
@@ -200,7 +160,19 @@ a:hover, a:visited, a:link, a:active {
                         /*                    */
 
 
+div.banner-wrapper {
+    background: url('../images/bg-orange-sky.png');
+    min-height: 490px;
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+    padding: 0;
+}
 
+img.large-banner {
+    padding: 70px 20px 0 20px;
+    margin: auto;
+}
 
 
                         /*                    */
@@ -292,7 +264,7 @@ img.blue-border {
 }
 
 img.portrait {
-    max-width: 450px;
+    max-width: 325px;
 }
 
 
@@ -604,19 +576,27 @@ hr.os--under-carousel {
                           /*    CONTACTS WELL   */
                           /*                    */
                           /*                    */
-
-div.container--contact {
-    padding: 0;
-    margin: 0;
+div.contacts-container {
+    width: 100%;
+    background-color: #fff0e7;
+    border-top: 3px solid #002b59;
 }
-.well--contacts {
+
+div.contacts-wrapper {
+    display: flex;
+}
+
+div.well--contacts {
     min-width: 440px;
+    max-width: 550px;
     background: rgba(234, 247, 255, 0.6) !important;
     color: #03264c;
     letter-spacing: 1px;
     padding-bottom: 0;
     border-radius: 1.5px;
-    margin: 60px 0;
+    border: 0.25px solid rgba(3, 38, 76, 0.2) !important;
+    margin: 60px auto !important;
+    box-shadow: 0 2px 7px #ffb07c;
 }
 
 .well--contacts > h1 {
@@ -658,6 +638,8 @@ form.form-style {
 
 .submit--button {
   background-color: #125D96;
+  height: 100px;
+  width: 150px;
   color: white;
   font-family: 'Yantramanav', sans-serif;
   font-weight: 400;
@@ -677,10 +659,6 @@ form.form-style {
   color: white;
   box-shadow: 0 2px 1px 1px #063568;
   transform: translateY(3px);
-}
-
-div#no-margin {
-    margin: 0;
 }
 
 /* CONTACTS HR TAG STYLING */
@@ -713,6 +691,10 @@ div#no-margin {
         vertical-align: middle;
         padding: 0;
         margin: 12px 0;
+    }
+
+    div.banner-wrapper {
+        min-height: 300px;
     }
 
     img.portrait {

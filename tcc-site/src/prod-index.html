@@ -99,11 +99,7 @@
 										</li>
 										<li class="menu--contacts">
 											<i class="fa fa-phone icon--bump" aria-hidden="true"></i>
-											Telephone - 520-987-6543
-										</li>
-										<li class="menu--contacts">
-											<i class="fa fa-fax icon--bump" aria-hidden="true"></i>
-											Fax - 520-123-4567
+											Telephone - 520-955-3276
 										</li>
 									</ul>
 								</li>
@@ -122,31 +118,10 @@
 
 
 
-
-		<!-- TOP TRANSPARENT DIV, FOR LANDING ANIMATION -->
-		<div class="container-fluid trans-top"></div>
-
-
-
-
-
-
-
-
 		<!-- LOGO BANNER CONTAINER  -->
-		<div class="container">
-			<img class="img-responsive center-block" src="./images/transparent-darkgreen-big-logo.png" alt="Large TCC Banner Logo">
+		<div class="container banner-wrapper">
+			<img class="img-responsive large-banner" src="./images/transparent-darkgreen-big-logo.png" alt="Large TCC Banner Logo">
 		</div>
-
-
-
-
-
-
-
-
-		<!-- BOTTOM TRANSPARENT DIV, FOR LANDING ANIMATION -->
-		<div class="container-fluid trans-bot"></div>
 
 
 
@@ -187,9 +162,9 @@
 				<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
 					<div class="well well--ourvision">
 						<p class="ov--content-vision">
-							The Closing Cut Desairology partners
+							The Closing Cut Desairology
 							<br>
-							with families and funeral homes
+							partners with families and funeral homes
 							<br>
 							seeking a high degree of focus on
 							<br>
@@ -431,9 +406,9 @@
 
 
 		<!-- CONTACT CONTAINER -->
-		<div id="contacts" class="container--contact">
+		<div id="contacts" class="container contacts-container">
 			<div class="row">
-				<div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
+				<div class="contacts-wrapper">
 					<div class="well well--contacts">
 						<h1>
 							Contact Us
@@ -455,28 +430,11 @@
 								</span>
 								: 520-955-3276
 							</p>
-							<p class="contacts-text">
-								<i class="fa fa-fax icon--bump"></i>
-								<span>
-									Fax
-								</span>
-								: 520-123-4567
-							</p>
 							<hr class="hr--contacts">
 						</div>
 						<!-- EMAIL FORM STARTS HERE -->
 						<div class="row">
 							<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
-								<!-- Script to handle serializing form data into JSON for POSTing to AWS API. -->
-								<script>
-									jQuery(document).ready(function($) {
-										$('[data-customer-form]').on('submit', function(e) {
-											e.preventDefault();
-											var json = $(this).formToJson({pretty: true, delimiter: '.'});
-											console.log(json);
-										});
-									});
-								</script>
 								<!-- Beginning of form. -->
 								<form class="form-style" action="/rest/contact" method="POST" role="form" data-customer-form>
 									<!-- Name -->
@@ -487,7 +445,7 @@
 									<!-- Email -->
 									<div class="form-group">
 										<label class="sr-only">Email Address</label>
-										<input type="text" name="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+										<input type="text" name="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email here.">
 										<small id="emailHelp" class="form-text text-muted">
 											We'll use this email address to respond promptly.
 										</small>
@@ -503,7 +461,7 @@
 										<textarea type="text" name="message" class="form-control" id="inputText" rows="6" placeholder="Enter message here..."></textarea>
 									</div>
 									<!-- Submit button for form -->
-									<div id="no-margin" class="form-group">
+									<div class="form-group">
 										<div class="submit--button-wrapper">
 											<button type="submit" name="submit" class="btn submit--button">
 												Submit
@@ -623,15 +581,6 @@
 			<div class="sitemap--wrapper-small">
 				<img src="./images/tcc-sitemap-small.png">
 			</div>
-			<div class="sitemap--text-wrapper">
-				<p class="sitemap--text">
-					Design by John MacIntire
-					<br>
-					All Rights Reserved
-					<span class="fa fa-copyright"></span>
-					2017 John MacIntire
-				</p>
-			</div>
 		</div>
 
 
@@ -645,6 +594,18 @@
 		<script type="text/javascript" src="./js/tcc.js"></script>
 		<!-- Processes form data into JSON - script courtesy of David Maple -->
 		<script type="text/javascript" src="./js/jquery-form2json.js"></script>
+		<!-- Script to handle serializing form data into JSON for POSTing to AWS API. -->
+		<script>
+			var json;
+			$(function($) {
+				$('[data-customer-form]').on('submit', function(e) {
+					e.preventDefault();
+					json = $(this).formToJson({pretty: true, delimiter: '.'});
+					// For testing.
+					console.log(json);
+				});
+			});
+		</script>
 		<!-- Font Awesome Script -->
 		<script src="https://use.fontawesome.com/a2d1026887.js"></script>
 	</body>
