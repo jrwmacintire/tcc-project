@@ -17,7 +17,8 @@ var gulp = require('gulp'),
     livereload = require('gulp-livereload'),
     sitemap = require('gulp-sitemap'),
     del = require('del'),
-    gutil = require('gulp-util');
+    gutil = require('gulp-util'),
+    changed = require('gulp-changed');
 
 // JAVASCRIPT TASK
 gulp.task('js', function() {
@@ -35,13 +36,6 @@ gulp.task('html', [], function() {
         .pipe(htmlclean())
         .pipe(gulp.dest('./build/'));
         // .pipe(notify({ message: '.html task complete.'}));
-});
-
-// MOVE PHP FILE, NO MINIFICATION OR COMPRESSION
-gulp.task('php', [], function() {
-    gulp.src("./src/php/*.php")
-        .pipe(gulp.dest('./build/php/'));
-        // .pipe(notify({ message: '.php task is complete. '}));
 });
 
 // STYLES
@@ -70,6 +64,7 @@ gulp.task('critical', function() {
 
 gulp.task('images', function() {
     return gulp.src('./src/images/*.png')
+        .pipe(changed('build/images'))
         .pipe(imagemin([imageminOptipng()]))
         .pipe(gulp.dest('build/images'))
 });
@@ -80,7 +75,7 @@ gulp.task('sitemap', function() {
         read: false
     })
         .pipe(sitemap({
-            siteUrl: 'http://www.theclosingcut.com'
+            siteUrl: 'http://www.theclosingcut.com/index.html'
         }))
         .pipe(gulp.dest('./build'));
 });
@@ -92,5 +87,5 @@ gulp.task('clean', function() {
 
 // DEFAULT
 gulp.task('default', ['clean'], function() {
-    gulp.start('css', 'js', 'html', 'php', 'images', 'sitemap');
+    gulp.start('css', 'js', 'html', 'images', 'sitemap');
 });

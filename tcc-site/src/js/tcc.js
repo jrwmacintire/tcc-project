@@ -47,6 +47,3 @@ $('.carousel--image').mouseenter(function() {
         opacity: 1
     }, 500);
 });
-
-// Form processing with jQuery, AJAX, and vanilla JS.
-$('')

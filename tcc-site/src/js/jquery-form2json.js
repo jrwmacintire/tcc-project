@@ -33,7 +33,7 @@
          * @param value
          */
         array: function (json, delimiter, name, value) {
-            var name = name.substr(name.indexOf('['));
+            name = name.substr(name.indexOf('['));
             var pObj;
             var cpName;
             $.each(name.split(/\[(.+?)\]/), function (i, nameSegment) {
@@ -138,4 +138,4 @@
 
         return JSON.stringify(object);
     };
-}(jQuery));
+}($));
