@@ -596,30 +596,28 @@
 		<script type="text/javascript" src="./js/jquery-form2json.js"></script>
 		<!-- Script to handle serializing form data into JSON for POSTing to AWS API. -->
 		<script>
-			var httpRequest;
-			var json;
 			$(function($) {
 				$('[data-customer-form]').on('submit', function(e){
 					e.preventDefault();
-					json = $(this).formToJson({pretty: true, delimiter: '.'});
+					var json = $(this).formToJson({pretty: true, delimiter: '.'});
 					// For testing.
 					console.log(json);
-				}),
 
-				$.ajax({
-					url: 'https://theclosingcut.com/rest/contact',
-					type: 'POST',
-					crossDomain: true,
-					contentType: 'application/json',
-					data: JSON.stringify(json),
-					dataType: 'json',
-					processData: false,
-					success: function(data) {
-						console.log('Function successful.');
-					},
-					error: function(xhr, ajaxOptions, thrownError) {
-						console.log(thrownError);
-					}
+					$.ajax({
+						url: 'https://theclosingcut.com/rest/contact',
+						type: 'POST',
+						crossDomain: true,
+						contentType: 'application/json',
+						data: json,
+						dataType: 'json',
+						processData: false,
+						success: function(data) {
+							console.log('Function successful.' + "\njson");
+						},
+						error: function(xhr, ajaxOptions, thrownError) {
+							console.log(thrownError);
+						}
+					});
 				});
 			});
 		</script>

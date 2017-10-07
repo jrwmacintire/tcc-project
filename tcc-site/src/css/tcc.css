@@ -161,7 +161,7 @@ a:hover, a:visited, a:link, a:active {
 
 
 div.banner-wrapper {
-    background: url('../images/bg-orange-sky.png');
+    background: url('../images/bg-orange-sky.png') no-repeat;
     min-height: 490px;
     display: flex;
     width: 100%;

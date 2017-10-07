@@ -55,7 +55,7 @@ gulp.task('critical', function() {
         .pipe(critical({
             inline: true,
             base: 'build/',
-            css: ['build/css/construction.css'],
+            css: ['./build/css/*.css'],
             minify: true
         }))
         .on('error', function(err) {gutil.log(gutil.colors.red(err.message)); })
@@ -64,7 +64,7 @@ gulp.task('critical', function() {
 
 gulp.task('images', function() {
     return gulp.src('./src/images/*.png')
-        .pipe(changed('build/images'))
+        .pipe(changed('./build/images/'))
         .pipe(imagemin([imageminOptipng()]))
         .pipe(gulp.dest('build/images'))
 });
@@ -86,6 +86,6 @@ gulp.task('clean', function() {
 });
 
 // DEFAULT
-gulp.task('default', ['clean'], function() {
-    gulp.start('css', 'js', 'html', 'images', 'sitemap');
+gulp.task('default', function() {
+    gulp.start('css', 'js', 'html', 'images', 'sitemap', 'critical');
 });
