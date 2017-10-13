@@ -348,6 +348,10 @@ img.portrait {
     margin-bottom: 35px;
 }
 
+.well--testimonials > p#testimonial {
+    min-height: 95px;
+}
+
 /* CUSTOM HR FOR TESTIMONIALS WELL */
 
 hr.hr--testimonials {

@@ -47,3 +47,53 @@ $('.carousel--image').mouseenter(function() {
         opacity: 1
     }, 500);
 });
+
+// Testimonial "carousel"
+// Clients JSON
+
+// Carousel function
+// setInterval(function() {
+//     jQuery.each(data, function (i, item) {
+//         $('#client').text(item.client);
+//         $('#location').text(item.location);
+//         $('#testimonial').text(item.testimonial);
+//         $('#relative').text(item.relative);
+//     })
+// }, 5000);
+
+var i = 1;
+setInterval(function() {
+    var testimonials = [
+        {
+            "client": "Janet Moretti",
+            "location": "Green Valley, Tucson, Arizona",
+            "testimonial": "Carlos's professionalism helped a great deal during a difficult time in which we had to say goodbye to my son.",
+            "relative": "Paul Moretti"
+        },
+        {
+            "client": "Douglas Glazek Jr.",
+            "location": "Rio Rico, Arizona",
+            "testimonial": "The amount of support Carlos showed my family left no doubt that my father would be well looked after. We were able to focus on celebrating my father’s life because of Carlos.",
+            "relative": "Douglas Glazek Sr."
+        },
+        {
+            "client": "Gloria Nuñez",
+            "location": "Tucson, Arizona",
+            "testimonial": "It was a pleasure to work with Carlos. He took a great deal of stress off our hands by working closely with the funeral home. Carlos’s support was felt by my entire family.",
+            "relative": "Eduardo Nuñez"
+        }
+    ];
+
+    $('#client').text(testimonials[i].client);
+    $('#location').text(testimonials[i].location);
+    $('#testimonial').text(testimonials[i].testimonial);
+    $('#relative').text(testimonials[i].relative);
+
+    console.log('Testimonial (index) #:' + i);
+    // iterator reset
+    if( i == 2 ) {
+        i = 0;
+    } else {
+        i++;
+    }
+}, 10000);

@@ -57,7 +57,7 @@
 							<!-- BRAND HERE -->
 							<div class="container navbar-logo">
 								<a href="#">
-									<img src="./images/transparent-darkgreen-noscissor-logo.jpg"></img>
+									<img src="./images/transparent-darkgreen-noscissor-logo.png"></img>
 								</a>
 							</div>
 							<div class="container small-navbar-logo">
@@ -212,16 +212,16 @@
 						</h1>
 						<hr class="hr--testimonials"></hr>
 						<!-- CONTENT FOR TESTIMONIALS -->
-						<h4>
+						<h4 id="client">
 							Janet Moretti
 						</h4>
-						<p>
+						<p id="location">
 							Green Valley, Tucson, Arizona
 						</p>
-						<p>
-							<i class="fa fa-quote-left"></i>
-							Carlos's professionalism helped a great deal during a difficult time in which we had to say goodbye to my son.
-							<i class="fa fa-quote-right"></i>
+						<p id="testimonial">
+								<!-- <i class="fa fa-quote-left"></i> -->
+								Carlos's professionalism helped a great deal during a difficult time in which we had to say goodbye to my son.
+								<!-- <i class="fa fa-quote-right"></i> -->
 						</p>
 						<h5>
 							In loving memory of...
@@ -612,7 +612,7 @@
 						dataType: 'json',
 						processData: false,
 						success: function(data) {
-							console.log('Function successful.' + "\njson");
+							console.log('Function successful.');
 						},
 						error: function(xhr, ajaxOptions, thrownError) {
 							console.log(thrownError);
