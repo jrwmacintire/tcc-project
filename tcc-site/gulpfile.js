@@ -7,85 +7,126 @@ var gulp = require('gulp'),
     // criticalCss = require('gulp-critical-css'),
     jshint = require('gulp-jshint'),
     uglify = require('gulp-uglify'),
-    imagemin = require('gulp-imagemin'),
-    imageminOptipng = require('imagemin-optipng'),
+    image = require('gulp-image'),
     rename = require('gulp-rename'),
     concat = require('gulp-concat'),
     insert = require('gulp-insert'),
     notify = require('gulp-notify'),
     cache = require('gulp-cache'),
     livereload = require('gulp-livereload'),
+    connect = require('gulp-connect'),
+    watch = require('gulp-watch'),
     sitemap = require('gulp-sitemap'),
     del = require('del'),
     gutil = require('gulp-util'),
-    changed = require('gulp-changed');
+    changed = require('gulp-changed'),
+    connect = require('gulp-connect');
 
-// JAVASCRIPT TASK
+
+//                      File source variables.
+var htmlSource = 'src/*.html';
+var cssSource = 'src/styles/*.css';
+var jsSource = 'src/scripts/*.js';
+var imagesSource = 'src/images/*.png';
+var allSources = htmlSource.concat(cssSource).concat(jsSource);
+var htmlDest = 'build/';
+var cssDest = 'build/styles/';
+var jsDest = 'build/scripts/';
+var imagesDest = 'build/images/'
+
+//                      connect to 'Connect' server
+gulp.task('connect', function() {
+    connect.server({
+        root: '.',
+        livereload: true
+    });
+});
+
+//                      Livereload
+gulp.task('livereload', function() {
+    gulp.src(allSources)
+        .pipe(connect.reload());
+});
+
+//                      Watch files for changes
+gulp.task('watch', function() {
+    gulp.watch(htmlSource, ['html']);
+    gulp.watch(cssSource, ['css']);
+    gulp.watch(jsSource, ['js']);
+    gulp.watch(imagesSource, ['images']);
+});
+
+//                      JS Gulp task
 gulp.task('js', function() {
-    return gulp.src('./src/js/*.js')
+    return gulp.src(jsSource)
+        .pipe(changed(jsDest))
         .pipe(jshint())
         .pipe(jshint.reporter('default'))
         .pipe(uglify())
-        .pipe(gulp.dest('./build/js/'));
-        // .pipe(notify({ message: '.js tasks are complete.' }));
+        .pipe(gulp.dest(jsDest))
+        .pipe(connect.reload())
 });
 
-// MOVE HTML FILE, NO MINIFICATION OR COMPRESSION
+//                      HTML Gulp task
 gulp.task('html', [], function() {
-    gulp.src("./src/*.html")
+    gulp.src(htmlSource)
+        .pipe(changed(htmlDest))
         .pipe(htmlclean())
-        .pipe(gulp.dest('./build/'));
-        // .pipe(notify({ message: '.html task complete.'}));
+        .pipe(gulp.dest(htmlDest))
+        .pipe(connect.reload())
 });
 
 // STYLES
 gulp.task('css', function() {
     var plugins = [
-        autoprefixer({ browsers: ['last 1 version']}),
+        autoprefixer({ browsers: ['last 1 version'] }),
         cssnano()
     ];
-    return gulp.src('./src/css/*.css')
+    return gulp.src(cssSource)
+        .pipe(changed(cssDest))
         .pipe(postcss(plugins))
-        .pipe(gulp.dest('./build/css/'));
+        .pipe(gulp.dest(cssDest))
+        .pipe(connect.reload())
 });
 
 // Generate & Inline Critical-path CSS
 gulp.task('critical', function() {
-    return gulp.src('build/*.html')
+    return gulp.src(htmlDest)
         .pipe(critical({
             inline: true,
-            base: 'build/',
-            css: ['./build/css/*.css'],
+            css: [cssDest],
+            // FIXME: This (vvv) may need a wildcard with '.css' extension.
+            base: 'cake/',
             minify: true
         }))
         .on('error', function(err) {gutil.log(gutil.colors.red(err.message)); })
-        .pipe(gulp.dest('build/'));
+        .pipe(gulp.dest(htmlDest));
 });
 
 gulp.task('images', function() {
-    return gulp.src('./src/images/*.png')
-        .pipe(changed('./build/images/'))
-        .pipe(imagemin([imageminOptipng()]))
-        .pipe(gulp.dest('build/images'))
-});
-
-// SITEMAP
-gulp.task('sitemap', function() {
-    return gulp.src('./build/*.html', {
-        read: false
-    })
-        .pipe(sitemap({
-            siteUrl: 'http://www.theclosingcut.com/index.html'
+    return gulp.src(imagesSource)
+        .pipe(changed(imagesDest))
+        .pipe(image({
+            pngquant: true,
+            optipng: false,
+            zopflipng: true,
+            jpegRecompress: false,
+            mozjpeg: true,
+            guetzli: false,
+            gifsicle: false,
+            svgo: false,
+            concurrent: 10
         }))
-        .pipe(gulp.dest('./build'));
+        .pipe(gulp.dest(imagesDest))
+        .pipe(connect.reload());
 });
 
 // CLEAN
-gulp.task('clean', function() {
-    return del(['./build/**/*']);
-});
+// gulp.task('clean', function() {
+//     return del(['./build/**/*']);
+// });
 
 // DEFAULT
 gulp.task('default', function() {
-    gulp.start('css', 'js', 'html', 'images', 'sitemap', 'critical');
+    gulp.start('connect', 'livereload', 'watch', 'css', 'js', 'html', 'critical', 'images');
 });
